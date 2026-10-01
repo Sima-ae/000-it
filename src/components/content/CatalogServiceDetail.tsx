@@ -25,6 +25,7 @@ import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { getRequestBrand } from "@/lib/brand/server";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
+  EMAIL_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
   RESELLER_HOSTING_SLUG_ORDER,
   SHARED_HOSTING_SLUG_ORDER,
@@ -55,6 +56,10 @@ const HOSTING_PLAN_PAGES = {
   "cloud-hosting": {
     order: CLOUD_HOSTING_SLUG_ORDER,
     titleKey: "cloudHosting",
+  },
+  "email-hosting": {
+    order: EMAIL_HOSTING_SLUG_ORDER,
+    titleKey: "emailHosting",
   },
   "reseller-hosting": {
     order: RESELLER_HOSTING_SLUG_ORDER,

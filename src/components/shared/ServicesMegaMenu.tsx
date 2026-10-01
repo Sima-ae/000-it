@@ -79,7 +79,7 @@ const featuredByGroup: Record<string, string[]> = {
     "community-management",
     "data-entry",
   ],
-  // Keep hosting plan order (Shared → Cloud → Reseller → WP → VPS)
+  // Keep hosting plan order (Shared → Cloud → Email → Reseller → WP → VPS)
   hosting: [
     "web-hosting",
     "domains",
@@ -89,6 +89,9 @@ const featuredByGroup: Record<string, string[]> = {
     "cloud-hosting-start",
     "cloud-hosting-basic",
     "cloud-hosting-plus",
+    "email-hosting-basic",
+    "email-hosting-business",
+    "email-hosting-pro",
     "reseller-hosting-start",
     "reseller-hosting-basic",
     "reseller-hosting-business",

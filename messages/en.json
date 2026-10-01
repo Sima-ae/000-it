@@ -292,6 +292,7 @@
     "support": "Support",
     "sharedHosting": "Shared Hosting",
     "cloudHosting": "Cloud Hosting",
+    "emailHosting": "Email Hosting",
     "resellerHosting": "Reseller Hosting",
     "wordpressHosting": "WordPress Hosting",
     "vpsHosting": "VPS Hosting",

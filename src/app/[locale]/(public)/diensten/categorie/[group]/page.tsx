@@ -26,6 +26,7 @@ import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { listServiceGroupCards } from "@/lib/service-group-listing";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
+  EMAIL_HOSTING_SLUG_ORDER,
   RESELLER_HOSTING_SLUG_ORDER,
   SHARED_HOSTING_SLUG_ORDER,
   shopProductsInSlugOrder,
@@ -106,6 +107,10 @@ export default async function ServiceCategoryPage({ params }: Params) {
     hostingCatalog,
     CLOUD_HOSTING_SLUG_ORDER,
   );
+  const emailHostingProducts = shopProductsInSlugOrder(
+    hostingCatalog,
+    EMAIL_HOSTING_SLUG_ORDER,
+  );
   const resellerHostingProducts = shopProductsInSlugOrder(
     hostingCatalog,
     RESELLER_HOSTING_SLUG_ORDER,
@@ -130,6 +135,11 @@ export default async function ServiceCategoryPage({ params }: Params) {
           key: "cloud-hosting",
           id: "cloud-hosting-pakketten",
           label: tShop("cloudHosting"),
+        },
+        {
+          key: "email-hosting",
+          id: "email-hosting-pakketten",
+          label: tShop("emailHosting"),
         },
         {
           key: "reseller-hosting",
@@ -197,6 +207,11 @@ export default async function ServiceCategoryPage({ params }: Params) {
             id="cloud-hosting-pakketten"
             title={tShop("cloudHosting")}
             products={cloudHostingProducts}
+          />
+          <ShopHostingSection
+            id="email-hosting-pakketten"
+            title={tShop("emailHosting")}
+            products={emailHostingProducts}
           />
           <ShopHostingSection
             id="reseller-hosting-pakketten"

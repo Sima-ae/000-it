@@ -584,6 +584,17 @@ export const serviceCatalog: ServiceNavItem[] = [
     group: "hosting",
   },
   {
+    slug: "email-hosting",
+    title: "Email Hosting",
+    titleNl: "E-mail hosting",
+    kind: "page",
+    group: "hosting",
+    summary:
+      "Professional email hosting with your own domain — storage, mailboxes, daily backups, spam filter, POP/IMAP and free Let's Encrypt SSL.",
+    summaryNl:
+      "Professionele e-mailhosting met je eigen domein — opslag, mailboxen, dagelijkse backups, spamfilter, POP/IMAP en gratis Let's Encrypt SSL.",
+  },
+  {
     slug: "reseller-hosting",
     title: "Reseller Hosting",
     titleNl: "Reseller hosting",
@@ -655,6 +666,27 @@ export const serviceCatalog: ServiceNavItem[] = [
     slug: "cloud-hosting-plus",
     title: "Cloud Hosting Plus",
     titleNl: "Cloud hosting plus",
+    kind: "product",
+    group: "hosting",
+  },
+  {
+    slug: "email-hosting-basic",
+    title: "Email Hosting Basic",
+    titleNl: "E-mail hosting basic",
+    kind: "product",
+    group: "hosting",
+  },
+  {
+    slug: "email-hosting-business",
+    title: "Email Hosting Business",
+    titleNl: "E-mail hosting business",
+    kind: "product",
+    group: "hosting",
+  },
+  {
+    slug: "email-hosting-pro",
+    title: "Email Hosting Pro",
+    titleNl: "E-mail hosting pro",
     kind: "product",
     group: "hosting",
   },

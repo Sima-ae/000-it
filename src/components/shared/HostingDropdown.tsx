@@ -12,6 +12,7 @@ import {
 } from "@/content/fixweb/catalog-title";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
+  EMAIL_HOSTING_SLUG_ORDER,
   RESELLER_HOSTING_SLUG_ORDER,
   SHARED_HOSTING_SLUG_ORDER,
   VPS_HOSTING_SLUG_ORDER,
@@ -31,6 +32,10 @@ export const HOSTING_MENU_COLUMNS = [
   {
     categorySlug: "cloud-hosting",
     planSlugs: CLOUD_HOSTING_SLUG_ORDER,
+  },
+  {
+    categorySlug: "email-hosting",
+    planSlugs: EMAIL_HOSTING_SLUG_ORDER,
   },
   {
     categorySlug: "reseller-hosting",
@@ -141,8 +146,8 @@ export function HostingDropdown({
           onMouseEnter={openMenu}
           onMouseLeave={scheduleClose}
         >
-          <div className="w-full max-w-[min(100%,72rem)] rounded-3xl border border-border/60 bg-white p-4 shadow-xl dark:bg-zinc-950 md:p-5">
-            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:gap-5">
+          <div className="w-full max-w-[min(100%,84rem)] rounded-3xl border border-border/60 bg-white p-4 shadow-xl dark:bg-zinc-950 md:p-5">
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 md:gap-5">
               {HOSTING_MENU_COLUMNS.map((column) => {
                 const categoryItem = serviceCatalog.find(
                   (s) => s.slug === column.categorySlug,

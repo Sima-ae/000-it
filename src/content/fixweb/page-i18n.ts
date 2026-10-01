@@ -946,6 +946,67 @@ export const pageI18n: Record<string, { nl: PageI18n; en: PageI18n }> = {
     },
   },
 
+  "email-hosting": {
+    nl: {
+      title: "E-mail Hosting",
+      subtitle:
+        "Professionele e-mail op je eigen domein — met opslag, mailboxen, dagelijkse backups, spamfilter, POP/IMAP en gratis Let’s Encrypt SSL.",
+      blocks: [
+        h("E-mail Hosting van TripleZero iT"),
+        p(
+          "Met e-mailhosting communiceer je via adressen op jouw eigen domeinnaam. Je krijgt duidelijke limieten voor opslag en mailboxen, dagelijkse backups, spamfiltering, POP/IMAP en gratis SSL — zonder een volledig webhostingpakket nodig te hebben.",
+        ),
+        h("Plannen"),
+        l([
+          "Basic — 5Gb opslag, max. 5 mailboxen, basis-spamfilter",
+          "Business — 10Gb opslag, max. 10 mailboxen, basis-spamfilter",
+          "Pro — 15Gb opslag, onbeperkt mailboxen, Pro-spamfilter",
+        ]),
+        h("Inbegrepen bij elk plan"),
+        l([
+          "Dagelijkse backups",
+          "Protocol: POP/IMAP",
+          "Gratis beveiliging: Let’s Encrypt SSL",
+          "Spamfilter (Basis of Pro)",
+        ]),
+        h("Voor wie is e-mail hosting geschikt?"),
+        p(
+          "Ideaal voor ondernemers, freelancers en teams die professionele e-mail op hun domein willen — los van of naast webhosting.",
+        ),
+        h("Bestellen of advies"),
+      ],
+    },
+    en: {
+      title: "Email Hosting",
+      subtitle:
+        "Professional email on your own domain — with storage, mailboxes, daily backups, spam filter, POP/IMAP and free Let’s Encrypt SSL.",
+      blocks: [
+        h("Email Hosting from TripleZero iT"),
+        p(
+          "With email hosting you communicate via addresses on your own domain name. You get clear storage and mailbox limits, daily backups, spam filtering, POP/IMAP and free SSL — without needing a full web hosting package.",
+        ),
+        h("Plans"),
+        l([
+          "Basic — 5Gb storage, max. 5 mailboxes, basic spam filter",
+          "Business — 10Gb storage, max. 10 mailboxes, basic spam filter",
+          "Pro — 15Gb storage, unlimited mailboxes, Pro spam filter",
+        ]),
+        h("Included with every plan"),
+        l([
+          "Daily backups",
+          "Protocol: POP/IMAP",
+          "Free security: Let’s Encrypt SSL",
+          "Spam filter (Basic or Pro)",
+        ]),
+        h("Who is email hosting for?"),
+        p(
+          "Ideal for entrepreneurs, freelancers and teams that want professional email on their domain — separately from or alongside web hosting.",
+        ),
+        h("Order or get advice"),
+      ],
+    },
+  },
+
   "reseller-hosting": {
     nl: {
       title: "Reseller Hosting",

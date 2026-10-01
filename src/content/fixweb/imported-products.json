@@ -100,6 +100,39 @@
       ]
     },
     {
+      "slug": "email-hosting-basic",
+      "name": "Email Hosting Basic",
+      "price": 2.7,
+      "currency": "EUR",
+      "shortDescription": "– Opslag: 5Gb\n– Mailboxen: Max. 5\n– Backup: Dagelijks\n– Spamfilter: Basis\n– Protocol: POP/IMAP\n– Gratis beveiliging: Let’s Encrypt SSL",
+      "description": "Email Hosting Basic gives you professional email on your own domain with essential capacity for small teams.\n\nYou receive 5Gb storage, up to 5 mailboxes, daily backups, a basic spam filter, POP/IMAP access and free Let’s Encrypt SSL.\n\nTripleZero iT keeps your mailbox reliable and secure so you can communicate professionally without managing a full web hosting stack.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
+      "slug": "email-hosting-business",
+      "name": "Email Hosting Business",
+      "price": 3.25,
+      "currency": "EUR",
+      "shortDescription": "– Opslag: 10Gb\n– Mailboxen: Max. 10\n– Backup: Dagelijks\n– Spamfilter: Basis\n– Protocol: POP/IMAP\n– Gratis beveiliging: Let’s Encrypt SSL",
+      "description": "Email Hosting Business is our popular plan for growing teams that need more mailboxes and storage.\n\nYou receive 10Gb storage, up to 10 mailboxes, daily backups, a basic spam filter, POP/IMAP access and free Let’s Encrypt SSL.\n\nTripleZero iT provides a dependable email foundation with room to scale day-to-day business communication.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
+      "slug": "email-hosting-pro",
+      "name": "Email Hosting Pro",
+      "price": 5.5,
+      "currency": "EUR",
+      "shortDescription": "– Opslag: 15Gb\n– Mailboxen: Onbeperkt\n– Backup: Dagelijks\n– Spamfilter: Pro\n– Protocol: POP/IMAP\n– Gratis beveiliging: Let’s Encrypt SSL",
+      "description": "Email Hosting Pro delivers maximum mailbox capacity with a stronger spam filter for busy organisations.\n\nYou receive 15Gb storage, unlimited mailboxes, daily backups, a Pro spam filter, POP/IMAP access and free Let’s Encrypt SSL.\n\nTripleZero iT combines generous email capacity with professional filtering so your inbox stays clean and available.",
+      "images": [
+        "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
+      ]
+    },
+    {
       "slug": "reseller-hosting-start",
       "name": "Reseller Hosting Start",
       "price": 14.85,

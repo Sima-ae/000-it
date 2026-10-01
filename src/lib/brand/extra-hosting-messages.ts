@@ -32,11 +32,11 @@ export function applyExtraHostingMessages<T>(
   const hero = asStringRecord(out.hero);
   if (isNl) {
     hero.title = "Domeinen en webhosting — snel, stabiel en scherp geprijsd";
-    hero.subtitle = `Registreer je domein en kies shared, cloud, WordPress of VPS hosting bij ${name}.`;
+    hero.subtitle = `Registreer je domein en kies shared, cloud, e-mail, WordPress of VPS hosting bij ${name}.`;
     hero.introTitleLine1 = "Domeinen en hosting";
     hero.introTitleLine2 = `met ${name}`;
     hero.introSubtitle =
-      "Registreer je gewenste domeinnaam en kies voor Shared, Cloud, WordPress of VPS hosting — snel, stabiel en scherp geprijsd.";
+      "Registreer je gewenste domeinnaam en kies voor Shared, Cloud, E-mail, WordPress of VPS hosting — snel, stabiel en scherp geprijsd.";
     hero.ctaServices = "Bekijk alle hosting plannen";
     hero.ctaContact = "Contact opnemen";
     hero.ctaDomains = "Zoek een domein";
@@ -54,15 +54,15 @@ export function applyExtraHostingMessages<T>(
     hero.serversOnline = "Servers online";
     hero.domainsReady = "Domeinen live";
     hero.bullet1 = "Domeinen, DNS en e-mail — duidelijk en betrouwbaar.";
-    hero.bullet2 = "Shared, cloud, WordPress en VPS hosting.";
+    hero.bullet2 = "Shared, cloud, e-mail, WordPress en VPS hosting.";
     hero.bullet3 = "Support in het Nederlands en Engels.";
   } else {
     hero.title = "Domains and web hosting — fast, stable and fairly priced";
-    hero.subtitle = `Register your domain and choose shared, cloud, WordPress or VPS hosting with ${name}.`;
+    hero.subtitle = `Register your domain and choose shared, cloud, email, WordPress or VPS hosting with ${name}.`;
     hero.introTitleLine1 = "Domains and hosting";
     hero.introTitleLine2 = `with ${name}`;
     hero.introSubtitle =
-      "Register your domain and choose shared, cloud, WordPress or VPS hosting — fast, stable and fairly priced.";
+      "Register your domain and choose shared, cloud, email, WordPress or VPS hosting — fast, stable and fairly priced.";
     hero.ctaServices = "View all hosting plans";
     hero.ctaContact = "Click here to contact us";
     hero.ctaDomains = "Search a domain";
@@ -80,7 +80,7 @@ export function applyExtraHostingMessages<T>(
     hero.serversOnline = "Servers online";
     hero.domainsReady = "Domains live";
     hero.bullet1 = "Domains, DNS and email — clear and reliable.";
-    hero.bullet2 = "Shared, cloud, WordPress and VPS hosting.";
+    hero.bullet2 = "Shared, cloud, email, WordPress and VPS hosting.";
     hero.bullet3 = "Support in English and Dutch.";
   }
   out.hero = hero;
@@ -88,19 +88,19 @@ export function applyExtraHostingMessages<T>(
   const faq = asStringRecord(out.faq);
   if (isNl) {
     faq.q1 = `Wie is ${name}?`;
-    faq.a1 = `${name} is gericht op domeinnamen, DNS, e-mail en webhosting: shared, cloud, WordPress en VPS — inclusief registratie, verhuizing en migraties. Bekijk ook onze FAQ en kennisbank voor stapsgewijze antwoorden.`;
+    faq.a1 = `${name} is gericht op domeinnamen, DNS, e-mail en webhosting: shared, cloud, e-mail, WordPress en VPS — inclusief registratie, verhuizing en migraties. Bekijk ook onze FAQ en kennisbank voor stapsgewijze antwoorden.`;
     faq.q2 = "Welke hostingplannen hebben jullie?";
     faq.a2 =
-      "Shared, cloud, WordPress en VPS — kies op traffic en groei. Elk plan heeft duidelijke resources, SSL en support. Details en prijzen staan op de hostingpagina’s en in de uitgebreide FAQ.";
+      "Shared, cloud, e-mail, WordPress en VPS — kies op traffic en groei. Elk plan heeft duidelijke resources, SSL en support. Details en prijzen staan op de hostingpagina’s en in de uitgebreide FAQ.";
     faq.q3 = "Kan ik later upgraden of een domein verhuizen?";
     faq.a3 =
       "Ja. Je kunt later upgraden (bijvoorbeeld shared → cloud/VPS) en domeinen registreren of verhuizen. We helpen bij DNS, e-mailauthenticatie en migratie — meer in de FAQ en kennisbank.";
   } else {
     faq.q1 = `Who is ${name}?`;
-    faq.a1 = `${name} focuses on domains, DNS, email and web hosting: shared, cloud, WordPress and VPS — including registration, transfers and migrations. See our FAQ and knowledge base for step-by-step answers.`;
+    faq.a1 = `${name} focuses on domains, DNS, email and web hosting: shared, cloud, email, WordPress and VPS — including registration, transfers and migrations. See our FAQ and knowledge base for step-by-step answers.`;
     faq.q2 = "Which hosting plans do you offer?";
     faq.a2 =
-      "Shared, cloud, WordPress and VPS — choose by traffic and growth. Every plan has clear resources, SSL and support. Details and pricing are on the hosting pages and in the full FAQ.";
+      "Shared, cloud, email, WordPress and VPS — choose by traffic and growth. Every plan has clear resources, SSL and support. Details and pricing are on the hosting pages and in the full FAQ.";
     faq.q3 = "Can I upgrade later or transfer a domain?";
     faq.a3 =
       "Yes. You can upgrade later (for example shared → cloud/VPS) and register or transfer domains. We help with DNS, email authentication and migration — more in the FAQ and knowledge base.";
@@ -111,12 +111,12 @@ export function applyExtraHostingMessages<T>(
   if (isNl) {
     services.title = "Hosting";
     services.subtitle =
-      "Domeinnamen registreren / verhuizen, e-mail, gedeelde webhosting, cloud, WordPress en VPS — gereed voor een stabiele online basis.";
+      "Domeinnamen registreren / verhuizen, e-mailhosting, gedeelde webhosting, cloud, WordPress en VPS — gereed voor een stabiele online basis.";
     services.viewAll = "Bekijk alle hosting plannen";
   } else {
     services.title = "Hosting";
     services.subtitle =
-      "Domains, shared, cloud, WordPress and VPS — everything for a stable online foundation.";
+      "Domains, shared, cloud, email, WordPress and VPS — everything for a stable online foundation.";
     services.viewAll = "View all hosting plans";
   }
   out.services = services;
@@ -196,7 +196,7 @@ export function applyExtraHostingMessages<T>(
   const about = asStringRecord(out.about);
   if (isNl) {
     about.title = `Wie is ${name}?`;
-    about.heroSubtitle = `${name} levert domeinnamen en webhosting — shared, cloud, WordPress en VPS — met support bij registratie, DNS, e-mail en migraties. Een betrouwbare partner voor een stabiele online basis.`;
+    about.heroSubtitle = `${name} levert domeinnamen en webhosting — shared, cloud, e-mail, WordPress en VPS — met support bij registratie, DNS, e-mail en migraties. Een betrouwbare partner voor een stabiele online basis.`;
     about.viewServices = "Bekijk hosting";
     about.missionText =
       "Ondernemers helpen met betrouwbare domeinen en webhosting: snel, stabiel, scherp geprijsd en met support wanneer dat nodig is.";
@@ -231,7 +231,7 @@ export function applyExtraHostingMessages<T>(
       "Zoek een domein, kies een hostingplan of neem contact op — we denken graag mee over de beste setup.";
   } else {
     about.title = `Who is ${name}?`;
-    about.heroSubtitle = `${name} provides domain names and web hosting — shared, cloud, WordPress and VPS — with support for registration, DNS, email and migrations. A reliable partner for a stable online foundation.`;
+    about.heroSubtitle = `${name} provides domain names and web hosting — shared, cloud, email, WordPress and VPS — with support for registration, DNS, email and migrations. A reliable partner for a stable online foundation.`;
     about.viewServices = "View hosting";
     about.missionText =
       "Help businesses with reliable domains and web hosting: fast, stable, fairly priced and with support when needed.";

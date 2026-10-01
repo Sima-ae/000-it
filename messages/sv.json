@@ -259,6 +259,7 @@
     "support": "Stöd",
     "sharedHosting": "Delad värd",
     "cloudHosting": "Cloud Hosting",
+    "emailHosting": "Email Hosting",
     "resellerHosting": "Reseller Hosting",
     "wordpressHosting": "WordPress värd",
     "vpsHosting": "VPS Hosting",

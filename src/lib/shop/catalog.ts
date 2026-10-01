@@ -70,6 +70,12 @@ export const CLOUD_HOSTING_SLUG_ORDER = [
   "cloud-hosting-plus",
 ] as const;
 
+export const EMAIL_HOSTING_SLUG_ORDER = [
+  "email-hosting-basic",
+  "email-hosting-business",
+  "email-hosting-pro",
+] as const;
+
 export const RESELLER_HOSTING_SLUG_ORDER = [
   "reseller-hosting-start",
   "reseller-hosting-basic",
@@ -94,6 +100,7 @@ export const VPS_HOSTING_SLUG_ORDER = [
 export const HOSTING_YEARLY_SLUGS = new Set<string>([
   ...SHARED_HOSTING_SLUG_ORDER,
   ...CLOUD_HOSTING_SLUG_ORDER,
+  ...EMAIL_HOSTING_SLUG_ORDER,
   ...RESELLER_HOSTING_SLUG_ORDER,
   ...WORDPRESS_HOSTING_SLUG_ORDER,
   ...VPS_HOSTING_SLUG_ORDER,
@@ -690,6 +697,7 @@ const HOSTING_CATEGORY_BY_PREFIX: Array<{
 }> = [
   { prefix: "shared-hosting-", categorySlug: "shared-hosting", fallback: "Shared Hosting" },
   { prefix: "cloud-hosting-", categorySlug: "cloud-hosting", fallback: "Cloud Hosting" },
+  { prefix: "email-hosting-", categorySlug: "email-hosting", fallback: "Email Hosting" },
   { prefix: "reseller-hosting-", categorySlug: "reseller-hosting", fallback: "Reseller Hosting" },
   { prefix: "wordpress-hosting-", categorySlug: "wordpress-hosting", fallback: "WordPress Hosting" },
   { prefix: "vps-hosting-", categorySlug: "vps-hosting", fallback: "VPS Hosting" },

@@ -30,5 +30,8 @@
   "reseller-hosting-start": "/uploads/fixweb/reseller-hosting-hero.png",
   "reseller-hosting-basic": "/uploads/fixweb/reseller-hosting-hero.png",
   "reseller-hosting-business": "/uploads/fixweb/reseller-hosting-hero.png",
-  "reseller-hosting-plus": "/uploads/fixweb/reseller-hosting-hero.png"
+  "reseller-hosting-plus": "/uploads/fixweb/reseller-hosting-hero.png",
+  "email-hosting-basic": "/uploads/fixweb/shared-hosting-basic.png",
+  "email-hosting-business": "/uploads/fixweb/shared-hosting-business.png",
+  "email-hosting-pro": "/uploads/fixweb/shared-hosting-plus.png"
 }

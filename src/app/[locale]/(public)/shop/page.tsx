@@ -5,6 +5,7 @@ import { ShopProductCard } from "@/components/shop/ShopProductCard";
 import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import {
   CLOUD_HOSTING_SLUG_ORDER,
+  EMAIL_HOSTING_SLUG_ORDER,
   HOSTING_YEARLY_SLUGS,
   isSupportPackageSlug,
   isWpCareSlug,
@@ -60,6 +61,10 @@ export default async function ShopPage({
   const cloudHostingProducts = shopProductsInSlugOrder(
     catalogProducts,
     CLOUD_HOSTING_SLUG_ORDER,
+  );
+  const emailHostingProducts = shopProductsInSlugOrder(
+    catalogProducts,
+    EMAIL_HOSTING_SLUG_ORDER,
   );
   const resellerHostingProducts = shopProductsInSlugOrder(
     catalogProducts,
@@ -153,6 +158,11 @@ export default async function ShopPage({
       <ShopHostingSection
         title={t("cloudHosting")}
         products={cloudHostingProducts}
+      />
+
+      <ShopHostingSection
+        title={t("emailHosting")}
+        products={emailHostingProducts}
       />
 
       <ShopHostingSection

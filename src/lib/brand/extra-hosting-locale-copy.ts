@@ -78,11 +78,11 @@ function isPlainObject(value: unknown): value is Record<string, unknown> {
 const en: LocaleCopy = {
   "hero.title": "Domains and web hosting — fast, stable and fairly priced",
   "hero.subtitle":
-    "Register your domain and choose shared, cloud, WordPress or VPS hosting with {name}.",
+    "Register your domain and choose shared, cloud, email, WordPress or VPS hosting with {name}.",
   "hero.introTitleLine1": "Domains and hosting",
   "hero.introTitleLine2": "with {name}",
   "hero.introSubtitle":
-    "Register your domain and choose shared, cloud, WordPress or VPS hosting — fast, stable and fairly priced.",
+    "Register your domain and choose shared, cloud, email, WordPress or VPS hosting — fast, stable and fairly priced.",
   "hero.ctaServices": "View all hosting plans",
   "hero.ctaContact": "Click here to contact us",
   "hero.ctaDomains": "Search a domain",
@@ -95,11 +95,11 @@ const en: LocaleCopy = {
   "hero.serversOnline": "Servers online",
   "hero.domainsReady": "Domains live",
   "hero.bullet1": "Domains, DNS and email — clear and reliable.",
-  "hero.bullet2": "Shared, cloud, WordPress and VPS hosting.",
+  "hero.bullet2": "Shared, cloud, email, WordPress and VPS hosting.",
   "hero.bullet3": "Support in English and Dutch.",
   "faq.q1": "Who is {name}?",
   "faq.a1":
-    "{name} focuses on domains, DNS, email and web hosting: shared, cloud, WordPress and VPS — including registration, transfers and migrations. See our FAQ and knowledge base for step-by-step answers.",
+    "{name} focuses on domains, DNS, email and web hosting: shared, cloud, email, WordPress and VPS — including registration, transfers and migrations. See our FAQ and knowledge base for step-by-step answers.",
   "faq.q2": "Which hosting plans do you offer?",
   "faq.a2":
     "Shared, cloud, WordPress and VPS — choose by traffic and growth. Every plan has clear resources, SSL and support. Details and pricing are on the hosting pages and in the full FAQ.",
@@ -108,7 +108,7 @@ const en: LocaleCopy = {
     "Yes. You can upgrade later (for example shared → cloud/VPS) and register or transfer domains. We help with DNS, email authentication and migration — more in the FAQ and knowledge base.",
   "services.title": "Hosting",
   "services.subtitle":
-    "Domains, shared, cloud, WordPress and VPS — everything for a stable online foundation.",
+    "Domains, shared, cloud, email, WordPress and VPS — everything for a stable online foundation.",
   "services.viewAll": "View all hosting plans",
   "kennisbank.subtitle":
     "Guides on domain names, DNS, email, shared hosting, cloud, WordPress, VPS, control panels and security.",
@@ -132,7 +132,7 @@ const en: LocaleCopy = {
   "shop.services": "Hosting products",
   "about.title": "Who is {name}?",
   "about.heroSubtitle":
-    "{name} provides domain names and web hosting — shared, cloud, WordPress and VPS — with support for registration, DNS, email and migrations. A reliable partner for a stable online foundation.",
+    "{name} provides domain names and web hosting — shared, cloud, email, WordPress and VPS — with support for registration, DNS, email and migrations. A reliable partner for a stable online foundation.",
   "about.viewServices": "View hosting",
   "about.missionText":
     "Help businesses with reliable domains and web hosting: fast, stable, fairly priced and with support when needed.",

@@ -349,6 +349,99 @@ TripleZero iT provides a fully managed cloud foundation with the headroom seriou
     },
   },
 
+  "email-hosting-basic": {
+    nl: {
+      name: "Basic",
+      shortDescription: `– Opslag: 5Gb
+– Mailboxen: Max. 5
+– Backup: Dagelijks
+– Spamfilter: Basis
+– Protocol: POP/IMAP
+– Gratis beveiliging: Let’s Encrypt SSL`,
+      description: `E-mail Hosting Basic geeft je professionele e-mail op je eigen domein met essentiële capaciteit voor kleine teams.
+
+Je krijgt 5Gb opslag, maximaal 5 mailboxen, dagelijkse backups, een basis-spamfilter, POP/IMAP-toegang en gratis Let’s Encrypt SSL.
+
+TripleZero iT houdt jouw mailbox betrouwbaar en veilig, zodat je professioneel communiceert zonder een volledig webhostingpakket te beheren.`,
+    },
+    en: {
+      name: "Basic",
+      shortDescription: `– Storage: 5Gb
+– Mailboxes: Max. 5
+– Backup: Daily
+– Spam filter: Basic
+– Protocol: POP/IMAP
+– Free security: Let’s Encrypt SSL`,
+      description: `Email Hosting Basic gives you professional email on your own domain with essential capacity for small teams.
+
+You receive 5Gb storage, up to 5 mailboxes, daily backups, a basic spam filter, POP/IMAP access and free Let’s Encrypt SSL.
+
+TripleZero iT keeps your mailbox reliable and secure so you can communicate professionally without managing a full web hosting stack.`,
+    },
+  },
+
+  "email-hosting-business": {
+    nl: {
+      name: "Business",
+      shortDescription: `– Opslag: 10Gb
+– Mailboxen: Max. 10
+– Backup: Dagelijks
+– Spamfilter: Basis
+– Protocol: POP/IMAP
+– Gratis beveiliging: Let’s Encrypt SSL`,
+      description: `E-mail Hosting Business is ons populaire plan voor groeiende teams die meer mailboxen en opslag nodig hebben.
+
+Je krijgt 10Gb opslag, maximaal 10 mailboxen, dagelijkse backups, een basis-spamfilter, POP/IMAP-toegang en gratis Let’s Encrypt SSL.
+
+TripleZero iT biedt een betrouwbare e-mailbasis met ruimte om dagelijkse zakelijke communicatie te schalen.`,
+    },
+    en: {
+      name: "Business",
+      shortDescription: `– Storage: 10Gb
+– Mailboxes: Max. 10
+– Backup: Daily
+– Spam filter: Basic
+– Protocol: POP/IMAP
+– Free security: Let’s Encrypt SSL`,
+      description: `Email Hosting Business is our popular plan for growing teams that need more mailboxes and storage.
+
+You receive 10Gb storage, up to 10 mailboxes, daily backups, a basic spam filter, POP/IMAP access and free Let’s Encrypt SSL.
+
+TripleZero iT provides a dependable email foundation with room to scale day-to-day business communication.`,
+    },
+  },
+
+  "email-hosting-pro": {
+    nl: {
+      name: "Pro",
+      shortDescription: `– Opslag: 15Gb
+– Mailboxen: Onbeperkt
+– Backup: Dagelijks
+– Spamfilter: Pro
+– Protocol: POP/IMAP
+– Gratis beveiliging: Let’s Encrypt SSL`,
+      description: `E-mail Hosting Pro levert maximale mailboxcapaciteit met een sterkere spamfilter voor drukke organisaties.
+
+Je krijgt 15Gb opslag, onbeperkt mailboxen, dagelijkse backups, een Pro-spamfilter, POP/IMAP-toegang en gratis Let’s Encrypt SSL.
+
+TripleZero iT combineert ruime e-mailcapaciteit met professionele filtering zodat jouw inbox schoon en beschikbaar blijft.`,
+    },
+    en: {
+      name: "Pro",
+      shortDescription: `– Storage: 15Gb
+– Mailboxes: Unlimited
+– Backup: Daily
+– Spam filter: Pro
+– Protocol: POP/IMAP
+– Free security: Let’s Encrypt SSL`,
+      description: `Email Hosting Pro delivers maximum mailbox capacity with a stronger spam filter for busy organisations.
+
+You receive 15Gb storage, unlimited mailboxes, daily backups, a Pro spam filter, POP/IMAP access and free Let’s Encrypt SSL.
+
+TripleZero iT combines generous email capacity with professional filtering so your inbox stays clean and available.`,
+    },
+  },
+
   "reseller-hosting-start": {
     nl: {
       name: "Reseller hosting start",

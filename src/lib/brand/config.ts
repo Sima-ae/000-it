@@ -109,8 +109,8 @@ export const BRANDS: Record<SiteBrandId, BrandPublicConfig> = {
     staffUi: false,
     defaultLocale: "en",
     defaultDescription: {
-      nl: "Domeinnamen en webhosting van Extra Hosting — shared, cloud, WordPress, VPS en domeinregistratie.",
-      en: "Domains and web hosting from Extra Hosting — shared, cloud, WordPress, VPS and domain registration.",
+      nl: "Domeinnamen en webhosting van Extra Hosting — shared, cloud, e-mail, WordPress, VPS en domeinregistratie.",
+      en: "Domains and web hosting from Extra Hosting — shared, cloud, email, WordPress, VPS and domain registration.",
     },
     defaultKeywords: {
       nl: [
@@ -118,6 +118,7 @@ export const BRANDS: Record<SiteBrandId, BrandPublicConfig> = {
         "domeinen",
         "webhosting",
         "cloud hosting",
+        "e-mail hosting",
         "WordPress hosting",
         "VPS",
         "shared hosting",
@@ -127,6 +128,7 @@ export const BRANDS: Record<SiteBrandId, BrandPublicConfig> = {
         "Extra Hosting",
         "domains",
         "web hosting",
+        "email hosting",
         "cloud hosting",
         "WordPress hosting",
         "VPS",

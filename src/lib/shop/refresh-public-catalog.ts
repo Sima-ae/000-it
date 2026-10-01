@@ -24,6 +24,7 @@ export async function refreshPublicShopSurfaces() {
     for (const slug of [
       "shared-hosting",
       "cloud-hosting",
+      "email-hosting",
       "reseller-hosting",
       "wordpress-hosting",
       "vps-hosting",

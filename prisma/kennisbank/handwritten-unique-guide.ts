@@ -87,18 +87,31 @@ const STOP_NL = new Set([
   "activeer", "activeren", "installeer", "installeren", "verbind", "verbinden",
 ]);
 
+const STOP_EN = new Set([
+  "the", "a", "an", "of", "for", "with", "on", "in", "to", "and", "or", "your", "my",
+  "how", "what", "why", "which", "where", "can", "i", "is", "are", "be", "do", "does",
+  "did", "at", "by", "as", "if", "then", "also", "not", "yet", "all", "from", "out",
+  "over", "this", "that", "these", "those", "so", "but", "via", "per", "vs", "versus",
+  "use", "using", "add", "adding", "set", "setting", "make", "making", "fix", "fixing",
+  "protect", "protecting", "start", "starting", "open", "opening", "choose", "choosing",
+  "put", "change", "changing", "remove", "removing", "check", "checking", "view",
+  "activate", "activating", "install", "installing", "connect", "connecting", "enable",
+  "disable", "get", "got", "have", "has", "when", "should", "will", "into", "onto",
+  "sign", "signed", "signing", "follow", "following", "guide", "guides", "step", "steps",
+]);
+
 function subject(title: string): string {
   return title.replace(/\?+$/, "").trim();
 }
 
-function tokensFrom(title: string, slug: string): string[] {
+function tokensFrom(title: string, slug: string, stop: Set<string>, fallback: string): string[] {
   const raw = `${title} ${slug.replace(/-/g, " ")}`
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9\s-]/g, " ")
     .split(/[\s-]+/)
-    .filter((t) => t.length >= 3 && !STOP_NL.has(t));
+    .filter((t) => t.length >= 3 && !stop.has(t));
   const seen = new Set<string>();
   const out: string[] = [];
   for (const t of raw) {
@@ -107,7 +120,7 @@ function tokensFrom(title: string, slug: string): string[] {
     out.push(t);
     if (out.length >= 8) break;
   }
-  return out.length ? out : ["onderwerp"];
+  return out.length ? out : [fallback];
 }
 
 function translateObj(t: string): string {
@@ -115,11 +128,14 @@ function translateObj(t: string): string {
     wachtwoord: "password",
     handtekening: "signature",
     mailbox: "mailbox",
+    mailboxen: "mailboxes",
     domein: "domain",
     domeinnaam: "domain name",
+    domeinnamen: "domain names",
     server: "server",
     firewall: "firewall",
     backup: "backup",
+    backups: "backups",
     database: "database",
     plugin: "plugin",
     thema: "theme",
@@ -137,12 +153,14 @@ function translateObj(t: string): string {
     analytics: "analytics",
     checkout: "checkout",
     factuur: "invoice",
+    facturen: "invoices",
     ticket: "ticket",
     cronjob: "cron job",
     cronjobs: "cron jobs",
     subdomain: "subdomain",
     subdomein: "subdomain",
     nameserver: "nameserver",
+    nameservers: "nameservers",
     dns: "DNS",
     ssl: "SSL",
     https: "HTTPS",
@@ -179,9 +197,164 @@ function translateObj(t: string): string {
     webhook: "webhook",
     hmac: "HMAC",
     agent: "agent",
+    agents: "agents",
     scan: "scan",
     aeo: "AEO",
     seo: "SEO",
+    geo: "GEO",
+    inloggen: "sign-in",
+    uitloggen: "sign-out",
+    quarantaine: "quarantine",
+    autorisatiecode: "authorization code",
+    gelockt: "locked",
+    licentie: "license",
+    handmatig: "manual",
+    nieuwsbrief: "newsletter",
+    landingspagina: "landing page",
+    landingspaginas: "landing pages",
+    gebruiker: "user",
+    gebruikers: "users",
+    klantenpanel: "client panel",
+    klantomgeving: "client area",
+    toewijzen: "assign",
+    intrekken: "revoke",
+    pakkettraject: "package track",
+    vervolgstappen: "next steps",
+    overzicht: "overview",
+    producten: "products",
+    diensten: "services",
+    aantoonbare: "demonstrable",
+    toestemming: "consent",
+    trustsignalen: "trust signals",
+    privacytekst: "privacy text",
+    meertalige: "multilingual",
+    dubbele: "duplicate",
+    belafspraak: "call appointment",
+    samenwerking: "collaboration",
+    opleveringen: "deliverables",
+    feedbackrondes: "feedback rounds",
+    schijfruimte: "disk space",
+    betaling: "payment",
+    betalingen: "payments",
+    korting: "discount",
+    geslaagde: "successful",
+    mislukte: "failed",
+    maandelijkse: "monthly",
+    jaarlijkse: "yearly",
+    instellingen: "settings",
+    beheer: "management",
+    beheren: "manage",
+    abonnement: "subscription",
+    opzeggen: "cancel",
+    verhuizen: "migrate",
+    migreren: "migrate",
+    koppelen: "connect",
+    doorsturen: "forward",
+    spamfilter: "spam filter",
+    stappenplan: "checklist",
+    handleiding: "guide",
+    uitleg: "explanation",
+    foutmelding: "error message",
+    paneel: "panel",
+    hostingpakket: "hosting plan",
+    hosting: "hosting",
+    website: "website",
+    websites: "websites",
+    "e-mailadres": "email address",
+    emailadres: "email address",
+    "e-mail": "email",
+    email: "email",
+    postvak: "mailbox",
+    inodes: "inodes",
+    bandbreedte: "bandwidth",
+    dataverkeer: "traffic",
+    onbeperkte: "unlimited",
+    dataverkeer: "traffic",
+    opslag: "storage",
+    onderwerp: "topic",
+    bescherm: "protect",
+    beschermen: "protect",
+    halen: "remove",
+    werken: "work",
+    werkt: "works",
+    zelf: "yourself",
+    klanten: "customers",
+    leveranciers: "vendors",
+    strategie: "strategy",
+    vernieuwing: "renewal",
+    faalt: "fails",
+    tijdelijk: "temporary",
+    volledige: "full",
+    volledig: "full",
+    prioriteiten: "priorities",
+    externe: "external",
+    specialisten: "specialists",
+    support: "support",
+    reseller: "reseller",
+    unmanaged: "unmanaged",
+    shared: "shared",
+    dedicated: "dedicated",
+    cloud: "cloud",
+    vps: "VPS",
+    cdn: "CDN",
+    proxy: "proxy",
+    nginx: "Nginx",
+    apache: "Apache",
+    mysql: "MySQL",
+    mariadb: "MariaDB",
+    php: "PHP",
+    nodejs: "Node.js",
+    python: "Python",
+    react: "React",
+    nextjs: "Next.js",
+    matomo: "Matomo",
+    google: "Google",
+    gmail: "Gmail",
+    thunderbird: "Thunderbird",
+    installatron: "Installatron",
+    jetbackup: "JetBackup",
+    letsencrypt: "Let's Encrypt",
+    imunify: "Imunify",
+    modsecurity: "ModSecurity",
+    opcache: "OPcache",
+    redis: "Redis",
+    memcached: "Memcached",
+    htaccess: ".htaccess",
+    rewrite: "rewrite",
+    redirecten: "redirect",
+    forwarden: "forward",
+    alias: "alias",
+    aliases: "aliases",
+    parked: "parked",
+    catch: "catch-all",
+    quota: "quota",
+    limiet: "limit",
+    limieten: "limits",
+    uurlimiet: "hourly limit",
+    blacklist: "blacklist",
+    whitelist: "whitelist",
+    allowlist: "allowlist",
+    blocklist: "blocklist",
+    geblokkeerd: "blocked",
+    gelocked: "locked",
+    locked: "locked",
+    lock: "lock",
+    unlock: "unlock",
+    transfer: "transfer",
+    authcode: "auth code",
+    epp: "EPP",
+    whois: "WHOIS",
+    sidn: "SIDN",
+    trustee: "trustee",
+    privacyguard: "privacy guard",
+    protect: "protect",
+    children: "children",
+    kids: "kids",
+    parental: "parental",
+    demonstrable: "demonstrable",
+    consent: "consent",
+    newsletter: "newsletter",
+    quarantine: "quarantine",
   };
   return map[t] || t;
 }
@@ -239,12 +412,19 @@ function hashVariant(slug: string): number {
 
 function analyze(article: UniqueArticle, titleEn: string): Analysis {
   const titleNl = subject(article.title);
+  const titleEnClean = subject(titleEn);
   const hay = `${article.slug} ${article.title} ${article.topic} ${article.categories.join(" ")}`.toLowerCase();
-  const objectsNl = tokensFrom(article.title, article.slug);
-  const objectsEn = objectsNl.map(translateObj);
+  const objectsNl = tokensFrom(article.title, article.slug, STOP_NL, "onderwerp");
+  // Prefer tokens from the fixed EN title so focus/excerpt stay English.
+  const fromEnTitle = tokensFrom(titleEnClean, "", STOP_EN, "topic").filter(
+    (t) => t && t !== "topic",
+  );
+  const objectsEn = (
+    fromEnTitle.length ? fromEnTitle : objectsNl.map(translateObj)
+  ).map((t) => translateObj(t));
   return {
     titleNl,
-    titleEn: subject(titleEn),
+    titleEn: titleEnClean,
     slug: article.slug,
     surface: detectSurface(hay),
     action: detectAction(hay),
@@ -680,17 +860,20 @@ function prep(a: Analysis, locale: "nl" | "en"): string[] {
 
 function verify(a: Analysis, locale: "nl" | "en"): string[] {
   const focus = locale === "nl" ? a.focusNl : a.focusEn;
-  const slugBit = a.slug.split("-").slice(0, 4).join(" ");
+  const contextBit =
+    locale === "nl"
+      ? a.slug.split("-").slice(0, 4).join(" ")
+      : a.objectsEn.slice(0, 3).join(" ") || a.focusEn;
   if (locale === "nl") {
     return [
       `Resultaat voor <strong>${focus}</strong> komt overeen met “${a.titleNl}”`,
-      `Geen regressie op een kritieke flow naast ${slugBit}`,
+      `Geen regressie op een kritieke flow naast ${contextBit}`,
       "Externe test of tweede browser/netwerk bevestigt het resultaat",
     ];
   }
   return [
     `Result for <strong>${focus}</strong> matches “${a.titleEn}”`,
-    `No regression on a critical flow beside ${slugBit}`,
+    `No regression on a critical flow beside <strong>${contextBit}</strong>`,
     "External test or second browser/network confirms the result",
   ];
 }
