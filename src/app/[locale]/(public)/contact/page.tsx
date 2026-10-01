@@ -51,8 +51,8 @@ export default async function ContactPage({
           <div className="flex lg:justify-end">
             <Button
               asChild
-              size="lg"
-              className="h-12 rounded-2xl px-8 text-base md:h-14 md:px-10 md:text-lg"
+              size="default"
+              className="h-9 rounded-xl px-5 text-sm md:h-10 md:px-6"
             >
               <SoftLink href={localizedHref(locale, "/afspraak")}>
                 {tNav("book")}
