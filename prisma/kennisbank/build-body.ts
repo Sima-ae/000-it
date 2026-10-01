@@ -1370,29 +1370,32 @@ export function buildHandCraftedTopicHtml(
   topic: string,
 ): string | null {
   const ctx = { title, topic };
-  const daBuilder = directadminTopicBuilders[topic];
-  if (daBuilder) return daBuilder(ctx);
-  const builder =
-    topicBuilders[topic] ||
-    agentTopicBuilders[topic] ||
-    aeoGeoSeoTopicBuilders[topic] ||
-    aiScanTopicBuilders[topic] ||
-    bloggenTopicBuilders[topic] ||
-    cyberpanelTopicBuilders[topic] ||
-    microsoftTopicBuilders[topic] ||
-    pleskTopicBuilders[topic] ||
-    veiligOnlineTopicBuilders[topic] ||
-    webdesignTopicBuilders[topic] ||
-    aiIntegratieTopicBuilders[topic] ||
-    analyticsCroTopicBuilders[topic] ||
-    ecommerceTopicBuilders[topic] ||
-    cdnPerformanceTopicBuilders[topic] ||
-    thickenTopicBuilders[topic] ||
-    infraTopicBuilders[topic] ||
-    troubleshootingTopicBuilders[topic] ||
-    privacyComplianceTopicBuilders[topic] ||
-    vergelijkingenTopicBuilders[topic];
-  if (builder) return builder(ctx);
+  const hasDaBuilder = Object.hasOwn(directadminTopicBuilders, topic);
+  if (hasDaBuilder) return directadminTopicBuilders[topic](ctx);
+  const builderMaps = [
+    topicBuilders,
+    agentTopicBuilders,
+    aeoGeoSeoTopicBuilders,
+    aiScanTopicBuilders,
+    bloggenTopicBuilders,
+    cyberpanelTopicBuilders,
+    microsoftTopicBuilders,
+    pleskTopicBuilders,
+    veiligOnlineTopicBuilders,
+    webdesignTopicBuilders,
+    aiIntegratieTopicBuilders,
+    analyticsCroTopicBuilders,
+    ecommerceTopicBuilders,
+    cdnPerformanceTopicBuilders,
+    thickenTopicBuilders,
+    infraTopicBuilders,
+    troubleshootingTopicBuilders,
+    privacyComplianceTopicBuilders,
+    vergelijkingenTopicBuilders,
+  ];
+  for (const map of builderMaps) {
+    if (Object.hasOwn(map, topic)) return map[topic](ctx);
+  }
   return null;
 }
 

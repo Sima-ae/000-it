@@ -1,24 +1,24 @@
 #!/usr/bin/env tsx
 /**
  * Full professional rebuild of all kennisbank articles (NL+EN).
- * Prefer curated → playbooks/writer → usable hand-crafted NL builders.
+ * Prefer curated → specific playbooks → unique long-form per niche.
+ * Thin hand-crafted builders are no longer allowed to override long-form guides.
  *
  * Usage: npx tsx prisma/kennisbank/rebuild-all-professional.ts
  */
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { buildHandCraftedTopicHtml, buildExcerpt } from "./build-body";
 import { ARTICLES_DIR, validateArticleFile } from "./load-article";
-import {
-  writeArticle,
-  withDutchBuilderBody,
-  type CatalogArticle,
-} from "./write-article";
+import { writeArticle, type CatalogArticle } from "./write-article";
 import { CURATED_ARTICLES } from "./curated-articles";
 import { matchPlaybook } from "./professional-playbooks";
 import type { KennisbankArticleFile } from "./article-schema";
 
 type Catalog = { articles: CatalogArticle[] };
+
+function plainLen(html: string): number {
+  return html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length;
+}
 
 function main() {
   const catalog = JSON.parse(
@@ -28,30 +28,23 @@ function main() {
 
   let written = 0;
   let curated = 0;
-  let withHandNl = 0;
   let playbookKept = 0;
+  let longform = 0;
   let failed = 0;
+  let thin = 0;
 
   for (const article of catalog.articles) {
     let file: KennisbankArticleFile = writeArticle(article);
-    const hasPlaybook = Boolean(matchPlaybook(article));
-    if (hasPlaybook) playbookKept += 1;
 
     if (CURATED_ARTICLES[article.slug]) {
       curated += 1;
-    } else if (!hasPlaybook) {
-      // Hand-crafted NL builders only when no dedicated playbook exists,
-      // and only if they are at least as rich as the generated body.
-      const hand = buildHandCraftedTopicHtml(article.title, article.topic);
-      if (hand && hand.length >= Math.min(500, file.nl.bodyHtml.length)) {
-        const excerpt = buildExcerpt(article.title, "nl", article.topic);
-        const merged = withDutchBuilderBody(file, hand, excerpt);
-        if (!validateArticleFile(merged).length) {
-          file = merged;
-          withHandNl += 1;
-        }
-      }
+    } else if (matchPlaybook(article)) {
+      playbookKept += 1;
+    } else {
+      longform += 1;
     }
+
+    if (plainLen(file.nl.bodyHtml) < 900) thin += 1;
 
     const errors = validateArticleFile(file);
     if (errors.length) {
@@ -74,7 +67,7 @@ function main() {
   }
 
   console.log(
-    `[rebuild-all-professional] written=${written} curated=${curated} playbooks=${playbookKept} handNl=${withHandNl} failed=${failed}`,
+    `[rebuild-all-professional] written=${written} curated=${curated} playbooks=${playbookKept} longform=${longform} thin(<900)=${thin} failed=${failed}`,
   );
   if (failed) process.exit(1);
 }

@@ -62,9 +62,15 @@ function main() {
     }
 
     const generated = writeArticle(article);
-    const builder = directadminTopicBuilders[article.topic];
-    const bodyNl = builder
-      ? builder({ title: article.title, topic: article.topic })
+    const hasBuilder = Object.hasOwn(
+      directadminTopicBuilders,
+      article.topic,
+    );
+    const bodyNl = hasBuilder
+      ? directadminTopicBuilders[article.topic]({
+          title: article.title,
+          topic: article.topic,
+        })
       : generated.nl.bodyHtml;
     const excerptNl =
       directadminExcerptsNl[article.topic] || generated.nl.excerpt;
@@ -94,7 +100,7 @@ function main() {
         join(ARTICLES_DIR, `${article.slug}.json`),
         `${JSON.stringify(file, null, 2)}\n`,
       );
-      if (builder) fromBuilder += 1;
+      if (hasBuilder) fromBuilder += 1;
     }
     written += 1;
   }

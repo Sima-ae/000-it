@@ -182,21 +182,24 @@ function rebuildPack(packName: string, catalog: Catalog) {
     if (!pack.categoryMatch(article.categories)) continue;
 
     const generated = writeArticle(article);
-    const builder = pack.builders[article.topic];
-    const bodyNl = builder
-      ? builder({ title: article.title, topic: article.topic })
+    const hasBuilder = Object.hasOwn(pack.builders, article.topic);
+    const bodyNl = hasBuilder
+      ? pack.builders[article.topic]({
+          title: article.title,
+          topic: article.topic,
+        })
       : generated.nl.bodyHtml;
 
     // Skip obvious filler builders if they contain banned phrases
     const useNl =
-      builder &&
+      hasBuilder &&
       !/Concrete check voor dit artikel|Dit artikel legt uit wat|nep-stappenplan|Open Files\/FTP\/PHP\/SSL\/Backups\/Cron zoals dit onderwerp vraagt/.test(
         bodyNl,
       )
         ? bodyNl
         : generated.nl.bodyHtml;
 
-    if (builder && useNl === bodyNl) fromBuilder += 1;
+    if (hasBuilder && useNl === bodyNl) fromBuilder += 1;
 
     const file: KennisbankArticleFile = {
       slug: article.slug,

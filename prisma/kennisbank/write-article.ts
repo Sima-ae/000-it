@@ -8,6 +8,7 @@
 import type { KennisbankArticleFile } from "./article-schema";
 import { CURATED_ARTICLES } from "./curated-articles";
 import { matchPlaybook } from "./professional-playbooks";
+import { buildUniqueLongformGuide } from "./unique-longform-guide";
 import {
   h2,
   joinBlocks,
@@ -500,7 +501,6 @@ function translateWords(input: string): string {
     extra: "extra",
     volledige: "full",
     via: "via",
-    jouw: "your",
     jullie: "your",
     deze: "this",
     dit: "this",
@@ -524,7 +524,6 @@ function translateWords(input: string): string {
     over: "about",
     na: "after",
     vóór: "before",
-    voor: "for",
     domein: "domain",
     domeinen: "domains",
     domeinnaam: "domain name",
@@ -583,17 +582,10 @@ function translateWords(input: string): string {
     trefwoorden: "keywords",
     afschermen: "protect",
     beveiligen: "secure",
-    bestanden: "files",
     als: "as",
-    nieuw: "new",
-    nieuwe: "new",
-    bestaande: "existing",
-    volledige: "full",
     automatisch: "automatic",
     antwoord: "reply",
-    doorsturen: "forward",
     verwijzing: "pointer",
-    uitleg: "guide",
     wordpress: "WordPress",
     directadmin: "DirectAdmin",
     cyberpanel: "CyberPanel",
@@ -1267,9 +1259,11 @@ export function writeArticle(article: CatalogArticle): KennisbankArticleFile {
     };
   }
 
+  const enTitle = englishTitleFromDutch(article.title, article.slug);
+
+  // Narrow, topic-specific playbooks only (Installatron WP install).
   const playbook = matchPlaybook(article);
   if (playbook) {
-    const enTitle = englishTitleFromDutch(article.title, article.slug);
     return {
       slug: article.slug,
       topic: article.topic,
@@ -1290,37 +1284,24 @@ export function writeArticle(article: CatalogArticle): KennisbankArticleFile {
     };
   }
 
-  const kind = detectKind(article.title, article.slug);
-  const panel = detectPanel(article.categories, article.topic, article.title);
-  const enTitle = englishTitleFromDutch(article.title, article.slug);
-
-  const specific = buildTopicSpecific(article, enTitle);
-  const built =
-    specific ||
-    (kind === "explain"
-      ? buildExplain(article.title, enTitle, panel, article.topic)
-      : kind === "troubleshoot"
-        ? buildTroubleshoot(article.title, enTitle, panel)
-        : kind === "compare"
-          ? buildCompare(article.title, enTitle, panel)
-          : buildHowto(article.title, enTitle, panel));
-
+  // Every niche gets its own unique long-form guide (not shared builders/playbooks).
+  const guide = buildUniqueLongformGuide(article, enTitle);
   return {
     slug: article.slug,
     topic: article.topic,
     nl: {
       title: article.title,
-      excerpt: built.excerptNl,
-      bodyHtml: built.nl,
+      excerpt: guide.excerptNl,
+      bodyHtml: guide.bodyNl,
       seoTitle: `${article.title} | TripleZero iT`,
-      seoDescription: built.excerptNl,
+      seoDescription: guide.excerptNl,
     },
     en: {
       title: enTitle,
-      excerpt: built.excerptEn,
-      bodyHtml: built.en,
+      excerpt: guide.excerptEn,
+      bodyHtml: guide.bodyEn,
       seoTitle: `${enTitle} | TripleZero iT`,
-      seoDescription: built.excerptEn,
+      seoDescription: guide.excerptEn,
     },
   };
 }

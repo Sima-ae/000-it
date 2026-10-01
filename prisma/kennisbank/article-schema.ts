@@ -38,6 +38,8 @@ export const FILLER_PHRASES = [
   "Find the setting that matches",
   "In deze handleiding volg je de stappen om <strong>",
   "This guide walks you through setting up <strong>",
+  "Dit artikel gaat over <strong>",
+  "This article covers <strong>",
 ] as const;
 
 export const MIN_BODY_CHARS = 280;
