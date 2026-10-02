@@ -58,54 +58,65 @@ export type ShopProduct = {
 };
 
 /** Shop and hosting-category column order. */
-export const SHARED_HOSTING_SLUG_ORDER = [
-  "shared-hosting-basic",
-  "shared-hosting-business",
-  "shared-hosting-plus",
+/**
+ * Hosting category keys (overview pages / menu columns).
+ * Individual plan slugs/names/specs come from the shop DB — never hardcode them.
+ */
+export const HOSTING_CATEGORY_SLUGS = [
+  "shared-hosting",
+  "cloud-hosting",
+  "email-hosting",
+  "reseller-hosting",
+  "wordpress-hosting",
+  "vps-hosting",
 ] as const;
 
-export const CLOUD_HOSTING_SLUG_ORDER = [
-  "cloud-hosting-start",
-  "cloud-hosting-basic",
-  "cloud-hosting-plus",
-] as const;
+export type HostingCategorySlug = (typeof HOSTING_CATEGORY_SLUGS)[number];
 
-export const EMAIL_HOSTING_SLUG_ORDER = [
-  "email-hosting-basic",
-  "email-hosting-business",
-  "email-hosting-pro",
-] as const;
+/** True for sellable hosting plan slugs (e.g. email-hosting-plus), not category pages. */
+export function isHostingPlanSlug(slug: string): boolean {
+  return HOSTING_CATEGORY_SLUGS.some((category) =>
+    slug.startsWith(`${category}-`),
+  );
+}
 
-export const RESELLER_HOSTING_SLUG_ORDER = [
-  "reseller-hosting-start",
-  "reseller-hosting-basic",
-  "reseller-hosting-business",
-  "reseller-hosting-plus",
-] as const;
+export function isHostingShopProduct(
+  product: Pick<ShopProduct, "slug" | "category" | "lineOfBusiness">,
+): boolean {
+  return (
+    product.lineOfBusiness === "HOSTING" ||
+    product.category === "hosting" ||
+    isHostingPlanSlug(product.slug)
+  );
+}
 
-export const WORDPRESS_HOSTING_SLUG_ORDER = [
-  "wordpress-hosting-basic",
-  "wordpress-hosting-business",
-  "wordpress-hosting-plus",
-] as const;
+export function hostingCategoryForSlug(slug: string): HostingCategorySlug | null {
+  return (
+    HOSTING_CATEGORY_SLUGS.find((category) => slug.startsWith(`${category}-`)) ??
+    null
+  );
+}
 
-export const VPS_HOSTING_SLUG_ORDER = [
-  "vps-hosting-start",
-  "vps-hosting-basic",
-  "vps-hosting-business",
-  "vps-hosting-plus",
-] as const;
+/** Live hosting plans for a category, ordered by DB sortOrder. */
+export function shopHostingProductsForCategory(
+  products: readonly ShopProduct[],
+  categorySlug: HostingCategorySlug | string,
+): ShopProduct[] {
+  const prefix = `${categorySlug}-`;
+  return products
+    .filter(
+      (product) =>
+        product.published !== false &&
+        product.slug.startsWith(prefix) &&
+        isHostingShopProduct(product),
+    )
+    .sort(
+      (a, b) =>
+        (a.sortOrder ?? 0) - (b.sortOrder ?? 0) || a.slug.localeCompare(b.slug),
+    );
+}
 
-/** Hosting plans listed monthly but sold as a 12-month package. */
-export const HOSTING_YEARLY_SLUGS = new Set<string>([
-  ...SHARED_HOSTING_SLUG_ORDER,
-  ...CLOUD_HOSTING_SLUG_ORDER,
-  ...EMAIL_HOSTING_SLUG_ORDER,
-  ...RESELLER_HOSTING_SLUG_ORDER,
-  ...WORDPRESS_HOSTING_SLUG_ORDER,
-  ...VPS_HOSTING_SLUG_ORDER,
-]);
-
+/** @deprecated Prefer isHostingPlanSlug / isHostingShopProduct — kept for gradual call-site updates. */
 export function shopProductsInSlugOrder(
   products: ShopProduct[],
   order: readonly string[],
@@ -115,6 +126,13 @@ export function shopProductsInSlugOrder(
     .filter((product) => rank.has(product.slug))
     .sort((a, b) => (rank.get(a.slug) ?? 999) - (rank.get(b.slug) ?? 999));
 }
+
+/** @deprecated Use isHostingPlanSlug — static seed helper only. */
+export const HOSTING_YEARLY_SLUGS = {
+  has(slug: string) {
+    return isHostingPlanSlug(slug);
+  },
+};
 
 /** WordPress care packages with monthly + discounted yearly billing. */
 export const SUPPORT_PACKAGE_KEYS = ["pro", "double", "premium"] as const;
@@ -806,7 +824,7 @@ export function mapDbShopProduct(row: DbShopRow): ShopProduct {
   const lineOfBusiness: ShopProductLineOfBusiness =
     row.lineOfBusiness === "HOSTING" ||
     row.category === "hosting" ||
-    HOSTING_YEARLY_SLUGS.has(row.slug)
+    isHostingPlanSlug(row.slug)
       ? "HOSTING"
       : "SERVICE";
 

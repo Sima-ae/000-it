@@ -411,30 +411,30 @@ TripleZero iT provides a dependable email foundation with room to scale day-to-d
     },
   },
 
-  "email-hosting-pro": {
+  "email-hosting-plus": {
     nl: {
-      name: "E-mail Hosting Pro",
+      name: "E-mail Hosting Plus",
       shortDescription: `– Opslag: 15Gb
 – Mailboxen: Onbeperkt
 – Backup: Dagelijks
 – Spamfilter: Pro
 – Protocol: POP/IMAP
 – Gratis beveiliging: Let’s Encrypt SSL`,
-      description: `E-mail Hosting Pro levert maximale mailboxcapaciteit met een sterkere spamfilter voor drukke organisaties.
+      description: `E-mail Hosting Plus levert maximale mailboxcapaciteit met een sterkere spamfilter voor drukke organisaties.
 
 Je krijgt 15Gb opslag, onbeperkt mailboxen, dagelijkse backups, een Pro-spamfilter, POP/IMAP-toegang en gratis Let’s Encrypt SSL.
 
 TripleZero iT combineert ruime e-mailcapaciteit met professionele filtering zodat jouw inbox schoon en beschikbaar blijft.`,
     },
     en: {
-      name: "Email Hosting Pro",
+      name: "Email Hosting Plus",
       shortDescription: `– Storage: 15Gb
 – Mailboxes: Unlimited
 – Backup: Daily
 – Spam filter: Pro
 – Protocol: POP/IMAP
 – Free security: Let’s Encrypt SSL`,
-      description: `Email Hosting Pro delivers maximum mailbox capacity with a stronger spam filter for busy organisations.
+      description: `Email Hosting Plus delivers maximum mailbox capacity with a stronger spam filter for busy organisations.
 
 You receive 15Gb storage, unlimited mailboxes, daily backups, a Pro spam filter, POP/IMAP access and free Let’s Encrypt SSL.
 

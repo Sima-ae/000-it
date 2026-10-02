@@ -19,7 +19,7 @@ const HOSTING_SORT: Record<string, number> = {
   "cloud-hosting-plus": 105,
   "email-hosting-basic": 106,
   "email-hosting-business": 107,
-  "email-hosting-pro": 108,
+  "email-hosting-plus": 108,
   "reseller-hosting-start": 109,
   "reseller-hosting-basic": 110,
   "reseller-hosting-business": 111,

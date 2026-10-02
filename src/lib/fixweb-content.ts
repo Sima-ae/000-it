@@ -15,15 +15,12 @@ import { formatEuro as formatEuroShared } from "@/lib/format-euro";
 import { hydrateLocalizedCopy } from "@/lib/localized-copy";
 import { isExtraHostingSurface } from "@/lib/brand/public-name";
 import {
-  CLOUD_HOSTING_SLUG_ORDER,
-  EMAIL_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
+  HOSTING_CATEGORY_SLUGS,
+  listShopProducts,
   localizeShopProduct,
-  RESELLER_HOSTING_SLUG_ORDER,
-  SHARED_HOSTING_SLUG_ORDER,
+  shopHostingProductsForCategory,
   shopUnitPriceInclCents,
-  VPS_HOSTING_SLUG_ORDER,
-  WORDPRESS_HOSTING_SLUG_ORDER,
 } from "@/lib/shop/catalog";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 
@@ -154,15 +151,7 @@ function productFeatures(shortDescription: string) {
     );
 }
 
-/** Overview pages whose “plans” list must follow the live shop catalog. */
-const HOSTING_OVERVIEW_SLUGS: Record<string, readonly string[]> = {
-  "shared-hosting": SHARED_HOSTING_SLUG_ORDER,
-  "cloud-hosting": CLOUD_HOSTING_SLUG_ORDER,
-  "email-hosting": EMAIL_HOSTING_SLUG_ORDER,
-  "reseller-hosting": RESELLER_HOSTING_SLUG_ORDER,
-  "wordpress-hosting": WORDPRESS_HOSTING_SLUG_ORDER,
-  "vps-hosting": VPS_HOSTING_SLUG_ORDER,
-};
+const HOSTING_OVERVIEW_SLUGS = new Set<string>(HOSTING_CATEGORY_SLUGS);
 
 function planTierLabel(name: string) {
   return name
@@ -170,19 +159,13 @@ function planTierLabel(name: string) {
     .trim();
 }
 
-function hostingPlanSummaryLine(slug: string, locale: string) {
-  const shop = getShopProductBySlug(slug);
-  const useCatalog = Boolean(shop && shop.published !== false && (locale === "nl" || locale === "en"));
-  const i18n = useCatalog ? null : getProductI18n(slug, locale);
-  const shortDescription = useCatalog
-    ? localizeShopProduct(shop!, locale).localizedShort
-    : i18n?.shortDescription ||
-      (shop ? localizeShopProduct(shop, locale === "nl" ? "nl" : "en").localizedShort : "");
-  const name = useCatalog
-    ? localizeShopProduct(shop!, locale).localizedName
-    : i18n?.name || shop?.name[locale === "nl" ? "nl" : "en"] || slug;
-  const features = productFeatures(shortDescription || "");
-  const label = planTierLabel(name);
+function hostingPlanSummaryLineFromProduct(
+  shop: NonNullable<ReturnType<typeof getShopProductBySlug>>,
+  locale: string,
+) {
+  const localized = localizeShopProduct(shop, locale);
+  const features = productFeatures(localized.localizedShort || "");
+  const label = planTierLabel(localized.localizedName);
   if (!label || features.length === 0) return null;
   return `${label} — ${features.join(", ")}`;
 }
@@ -193,10 +176,9 @@ function withLiveHostingPlanSpecs(
   locale: string,
   blocks: ContentBlock[],
 ): ContentBlock[] {
-  const order = HOSTING_OVERVIEW_SLUGS[slug];
-  if (!order) return blocks;
-  const lines = order
-    .map((productSlug) => hostingPlanSummaryLine(productSlug, locale))
+  if (!HOSTING_OVERVIEW_SLUGS.has(slug)) return blocks;
+  const lines = shopHostingProductsForCategory(listShopProducts(), slug)
+    .map((product) => hostingPlanSummaryLineFromProduct(product, locale))
     .filter((line): line is string => Boolean(line));
   if (lines.length < 2) return blocks;
 
@@ -443,7 +425,38 @@ function serviceSubtitleForLocale(slug: string, locale: string, nl: string, en: 
 
 function buildServiceContent(slug: string, locale: string) {
   const meta = getCatalogItem(slug);
-  if (!meta) return null;
+  const shopOnly = getShopProductBySlug(slug);
+  if (!meta) {
+    if (!shopOnly || shopOnly.published === false) return null;
+    const product = getImportedProduct(slug, { lean: true, locale });
+    if (!product) return null;
+    const featureSubtitle =
+      product.features.length > 0
+        ? product.features.slice(0, 4).join(" · ")
+        : product.shortDescription.split("\n")[0] || "";
+    return {
+      meta: {
+        slug,
+        title: product.name,
+        titleNl: product.name,
+        kind: "product" as const,
+        group: "hosting" as const,
+      },
+      title: brandify(product.name),
+      subtitle: featureSubtitle,
+      price: product.price,
+      currency: product.currency,
+      priceSuffix: catalogUiLabel(
+        "perMonth",
+        locale,
+        locale === "nl" ? "/ maand" : "/ month",
+      ),
+      image: product.localImage || pageImageFallback[slug] || null,
+      blocks: product.blocks,
+      kind: "product" as const,
+      features: product.features,
+    };
+  }
   const isNl = locale === "nl";
 
   const custom = getCustomServiceContent(slug, locale);
@@ -617,7 +630,23 @@ export async function getServiceContent(slug: string, locale: string = "nl") {
 
 function buildServiceCardMeta(slug: string, locale: string) {
   const meta = getCatalogItem(slug);
-  if (!meta) return null;
+  const shop = getShopProductBySlug(slug);
+  if (!meta) {
+    if (!shop || shop.published === false) return null;
+    const localized = localizeShopProduct(shop, locale);
+    const shortDescription = brandify(localized.localizedShort || "");
+    const features = productFeatures(shortDescription);
+    return {
+      title: brandify(localized.localizedName),
+      subtitle:
+        features.length > 0
+          ? features.slice(0, 4).join(" · ")
+          : shortDescription.split("\n")[0] || "",
+      price: shopUnitPriceInclCents(shop) / 100,
+      image: shop.image || imageMap[slug] || pageImageFallback[slug] || null,
+      hasBody: true,
+    };
+  }
   const isNl = locale === "nl";
 
   const custom = getCustomServiceContent(slug, locale);

@@ -684,9 +684,9 @@ export const serviceCatalog: ServiceNavItem[] = [
     group: "hosting",
   },
   {
-    slug: "email-hosting-pro",
-    title: "Email Hosting Pro",
-    titleNl: "E-mail hosting pro",
+    slug: "email-hosting-plus",
+    title: "Email Hosting Plus",
+    titleNl: "E-mail hosting plus",
     kind: "product",
     group: "hosting",
   },

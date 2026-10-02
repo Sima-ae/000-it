@@ -4,19 +4,13 @@ import { WordPressCarePlansSection } from "@/components/marketing/WordPressCareP
 import { ShopProductCard } from "@/components/shop/ShopProductCard";
 import { ShopHostingSection } from "@/components/shop/ShopHostingSection";
 import {
-  CLOUD_HOSTING_SLUG_ORDER,
-  EMAIL_HOSTING_SLUG_ORDER,
-  HOSTING_YEARLY_SLUGS,
+  isHostingShopProduct,
   isSupportPackageSlug,
   isWpCareSlug,
   localizeShopProduct,
   resolvePlanNamesFromCatalog,
   resolvePlanPricesFromCatalog,
-  RESELLER_HOSTING_SLUG_ORDER,
-  SHARED_HOSTING_SLUG_ORDER,
-  shopProductsInSlugOrder,
-  VPS_HOSTING_SLUG_ORDER,
-  WORDPRESS_HOSTING_SLUG_ORDER,
+  shopHostingProductsForCategory,
   type ShopProduct,
 } from "@/lib/shop/catalog";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
@@ -52,36 +46,36 @@ export default async function ShopPage({
       (p.type === "service" || p.type === "product") &&
       !isSupportPackageSlug(p.slug) &&
       !isWpCareSlug(p.slug) &&
-      (!hostingOnly || HOSTING_YEARLY_SLUGS.has(p.slug)),
+      (!hostingOnly || isHostingShopProduct(p)),
   );
-  const sharedHostingProducts = shopProductsInSlugOrder(
+  const sharedHostingProducts = shopHostingProductsForCategory(
     catalogProducts,
-    SHARED_HOSTING_SLUG_ORDER,
+    "shared-hosting",
   );
-  const cloudHostingProducts = shopProductsInSlugOrder(
+  const cloudHostingProducts = shopHostingProductsForCategory(
     catalogProducts,
-    CLOUD_HOSTING_SLUG_ORDER,
+    "cloud-hosting",
   );
-  const emailHostingProducts = shopProductsInSlugOrder(
+  const emailHostingProducts = shopHostingProductsForCategory(
     catalogProducts,
-    EMAIL_HOSTING_SLUG_ORDER,
+    "email-hosting",
   );
-  const resellerHostingProducts = shopProductsInSlugOrder(
+  const resellerHostingProducts = shopHostingProductsForCategory(
     catalogProducts,
-    RESELLER_HOSTING_SLUG_ORDER,
+    "reseller-hosting",
   );
-  const wordpressHostingProducts = shopProductsInSlugOrder(
+  const wordpressHostingProducts = shopHostingProductsForCategory(
     catalogProducts,
-    WORDPRESS_HOSTING_SLUG_ORDER,
+    "wordpress-hosting",
   );
-  const vpsHostingProducts = shopProductsInSlugOrder(
+  const vpsHostingProducts = shopHostingProductsForCategory(
     catalogProducts,
-    VPS_HOSTING_SLUG_ORDER,
+    "vps-hosting",
   );
   const serviceProducts = hostingOnly
     ? []
     : sortServiceProducts(
-        catalogProducts.filter((p) => !HOSTING_YEARLY_SLUGS.has(p.slug)),
+        catalogProducts.filter((p) => !isHostingShopProduct(p)),
         locale,
       );
 

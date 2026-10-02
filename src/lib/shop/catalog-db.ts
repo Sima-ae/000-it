@@ -5,7 +5,7 @@ import {
   type ShopProduct,
 } from "@/lib/shop/catalog";
 
-/** Server-side: load published products from DB, fall back to static catalog. */
+/** Server-side: load published products from DB. Static catalog only if DB is empty. */
 export async function loadShopCatalogFromDb(opts?: {
   includeUnpublished?: boolean;
 }): Promise<ShopProduct[]> {
@@ -19,17 +19,8 @@ export async function loadShopCatalogFromDb(opts?: {
       setRuntimeShopCatalog(STATIC_SHOP_CATALOG);
       return STATIC_SHOP_CATALOG;
     }
-    // DB rows always win. Fill gaps from static so missing SKUs (e.g. cloud)
-    // still appear until they are synced into the catalog.
-    const mapped = rows.map(mapDbShopProduct);
-    const bySlug = new Map(mapped.map((product) => [product.slug, product]));
-    for (const product of STATIC_SHOP_CATALOG) {
-      if (!bySlug.has(product.slug)) {
-        mapped.push(product);
-        bySlug.set(product.slug, product);
-      }
-    }
-    mapped.sort(
+    // DB is the only source of truth for live products (names, specs, slugs, prices).
+    const mapped = rows.map(mapDbShopProduct).sort(
       (a, b) =>
         (a.sortOrder ?? 0) - (b.sortOrder ?? 0) || a.slug.localeCompare(b.slug),
     );

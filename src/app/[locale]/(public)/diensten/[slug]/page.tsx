@@ -12,6 +12,8 @@ import { resolveEntityParam } from "@/lib/resolve-entity-param";
 import { canonicalEntityKey } from "@/lib/entity-slug-cache";
 import { hydrateEntitySlugs } from "@/lib/entity-slugs";
 import { CatalogServiceDetail } from "@/components/content/CatalogServiceDetail";
+import { getShopProductBySlug } from "@/lib/shop/catalog";
+import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 
 /** Live shop catalog drives price/specs — must not bake stale static product data. */
 export const dynamic = "force-dynamic";
@@ -52,10 +54,13 @@ export default async function ServiceDetailPage({
     param: rawSlug,
     internalPathFor: (key) => `/diensten/${key}`,
   });
+  const shopCatalog = await loadShopCatalogFromDb();
+  const shopProduct = getShopProductBySlug(slug);
   const meta = getCatalogItem(slug);
   if (meta?.href) {
     redirect(localizedHref(locale, meta.href));
   }
-  if (!meta) notFound();
+  // Hosting/shop products may exist only in the DB catalog (no static formweb entry).
+  if (!meta && !shopProduct) notFound();
   return <CatalogServiceDetail locale={locale} slug={slug} />;
 }

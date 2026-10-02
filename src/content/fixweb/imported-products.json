@@ -122,12 +122,12 @@
       ]
     },
     {
-      "slug": "email-hosting-pro",
-      "name": "Email Hosting Pro",
+      "slug": "email-hosting-plus",
+      "name": "Email Hosting Plus",
       "price": 5.5,
       "currency": "EUR",
       "shortDescription": "– Opslag: 15Gb\n– Mailboxen: Onbeperkt\n– Backup: Dagelijks\n– Spamfilter: Pro\n– Protocol: POP/IMAP\n– Gratis beveiliging: Let’s Encrypt SSL",
-      "description": "Email Hosting Pro delivers maximum mailbox capacity with a stronger spam filter for busy organisations.\n\nYou receive 15Gb storage, unlimited mailboxes, daily backups, a Pro spam filter, POP/IMAP access and free Let’s Encrypt SSL.\n\nTripleZero iT combines generous email capacity with professional filtering so your inbox stays clean and available.",
+      "description": "Email Hosting Plus delivers maximum mailbox capacity with a stronger spam filter for busy organisations.\n\nYou receive 15Gb storage, unlimited mailboxes, daily backups, a Pro spam filter, POP/IMAP access and free Let’s Encrypt SSL.\n\nTripleZero iT combines generous email capacity with professional filtering so your inbox stays clean and available.",
       "images": [
         "https://000-it.com/wp-content/uploads/2024/07/FAVICON-TripleZero iT-SITE.png"
       ]

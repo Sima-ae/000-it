@@ -25,13 +25,7 @@ import { serverLocationsCopy } from "@/content/server-locations";
 import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { listServiceGroupCards } from "@/lib/service-group-listing";
 import {
-  CLOUD_HOSTING_SLUG_ORDER,
-  EMAIL_HOSTING_SLUG_ORDER,
-  RESELLER_HOSTING_SLUG_ORDER,
-  SHARED_HOSTING_SLUG_ORDER,
-  shopProductsInSlugOrder,
-  VPS_HOSTING_SLUG_ORDER,
-  WORDPRESS_HOSTING_SLUG_ORDER,
+  shopHostingProductsForCategory,
 } from "@/lib/shop/catalog";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import { buildPageMetadata } from "@/lib/seo";
@@ -99,29 +93,29 @@ export default async function ServiceCategoryPage({ params }: Params) {
     ? cards.filter((card) => card.item.slug === "domains")
     : cards;
   const hostingCatalog = isHosting ? await loadShopCatalogFromDb() : [];
-  const sharedHostingProducts = shopProductsInSlugOrder(
+  const sharedHostingProducts = shopHostingProductsForCategory(
     hostingCatalog,
-    SHARED_HOSTING_SLUG_ORDER,
+    "shared-hosting",
   );
-  const cloudHostingProducts = shopProductsInSlugOrder(
+  const cloudHostingProducts = shopHostingProductsForCategory(
     hostingCatalog,
-    CLOUD_HOSTING_SLUG_ORDER,
+    "cloud-hosting",
   );
-  const emailHostingProducts = shopProductsInSlugOrder(
+  const emailHostingProducts = shopHostingProductsForCategory(
     hostingCatalog,
-    EMAIL_HOSTING_SLUG_ORDER,
+    "email-hosting",
   );
-  const resellerHostingProducts = shopProductsInSlugOrder(
+  const resellerHostingProducts = shopHostingProductsForCategory(
     hostingCatalog,
-    RESELLER_HOSTING_SLUG_ORDER,
+    "reseller-hosting",
   );
-  const wordpressHostingProducts = shopProductsInSlugOrder(
+  const wordpressHostingProducts = shopHostingProductsForCategory(
     hostingCatalog,
-    WORDPRESS_HOSTING_SLUG_ORDER,
+    "wordpress-hosting",
   );
-  const vpsHostingProducts = shopProductsInSlugOrder(
+  const vpsHostingProducts = shopHostingProductsForCategory(
     hostingCatalog,
-    VPS_HOSTING_SLUG_ORDER,
+    "vps-hosting",
   );
 
   const otherGroups = hostingOnly

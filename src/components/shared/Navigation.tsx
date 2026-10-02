@@ -11,7 +11,7 @@ import { InfoDropdown } from "@/components/shared/InfoDropdown";
 import {
   HostingDropdown,
   HOSTING_MENU_COLUMNS,
-  HOSTING_SLUGS,
+  isHostingNavPath,
 } from "@/components/shared/HostingDropdown";
 import { LanguageSwitcher } from "@/components/shared/LanguageSwitcher";
 import { CartNavButton } from "@/components/shop/CartNavButton";
@@ -30,6 +30,10 @@ import { GlobalSearchButton } from "@/components/shared/GlobalSearch";
 import { cn } from "@/lib/utils";
 import { useBrand } from "@/lib/brand/BrandProvider";
 import { useShopCatalog } from "@/components/shop/ShopCatalogProvider";
+import {
+  localizeShopProduct,
+  shopHostingProductsForCategory,
+} from "@/lib/shop/catalog";
 
 const primaryLinksFull = [
   { href: "/", key: "home" },
@@ -70,7 +74,7 @@ export function Navigation() {
   const locale = useLocale();
   const pathname = usePathname();
   const brand = useBrand();
-  const { titleFor } = useShopCatalog();
+  const { titleFor, products } = useShopCatalog();
   const isExtraHosting = brand.id === "extrahosting";
   const primaryLinks =
     brand.catalogMode === "domains_hosting" ? primaryLinksHosting : primaryLinksFull;
@@ -110,15 +114,7 @@ export function Navigation() {
       return publicPathMatches(pathname, serviceHref(locale, domainsItem), locale);
     }
     if (linkHref === "/diensten/categorie/hosting") {
-      const hostingGroup = serviceGroupHref(locale, "hosting");
-      if (publicPathMatches(pathname, hostingGroup, locale)) {
-        return true;
-      }
-      return HOSTING_SLUGS.some((slug) => {
-        const item = serviceCatalog.find((s) => s.slug === slug);
-        if (!item) return false;
-        return publicPathMatches(pathname, serviceHref(locale, item), locale);
-      });
+      return isHostingNavPath(pathname, locale, products);
     }
     return publicPathMatches(pathname, pathOnly, locale);
   }
@@ -160,7 +156,6 @@ export function Navigation() {
               const active = linkActive(link.href, pathOnly);
 
               if ("mega" in link && link.mega) {
-                const hostingGroup = serviceGroupHref(locale, "hosting");
                 const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
                 const domainsHref = domainsItem
                   ? serviceHref(locale, domainsItem)
@@ -168,17 +163,7 @@ export function Navigation() {
                 const onDomains =
                   Boolean(domainsHref) &&
                   publicPathMatches(pathname, domainsHref, locale);
-                const onHosting =
-                  publicPathMatches(pathname, hostingGroup, locale) ||
-                  HOSTING_SLUGS.some((slug) => {
-                    const item = serviceCatalog.find((s) => s.slug === slug);
-                    if (!item) return false;
-                    return publicPathMatches(
-                      pathname,
-                      serviceHref(locale, item),
-                      locale,
-                    );
-                  });
+                const onHosting = isHostingNavPath(pathname, locale, products);
                 return (
                   <ServicesMegaMenu
                     key={link.key}
@@ -306,7 +291,6 @@ export function Navigation() {
                 const active = linkActive(link.href, pathOnly);
 
                 if ("mega" in link && link.mega) {
-                  const hostingGroup = serviceGroupHref(locale, "hosting");
                   const domainsItem = serviceCatalog.find((s) => s.slug === "domains");
                   const domainsHref = domainsItem
                     ? serviceHref(locale, domainsItem)
@@ -314,17 +298,7 @@ export function Navigation() {
                   const onDomains =
                     Boolean(domainsHref) &&
                     publicPathMatches(pathname, domainsHref, locale);
-                  const onHosting =
-                    publicPathMatches(pathname, hostingGroup, locale) ||
-                    HOSTING_SLUGS.some((slug) => {
-                      const item = serviceCatalog.find((s) => s.slug === slug);
-                      if (!item) return false;
-                      return publicPathMatches(
-                        pathname,
-                        serviceHref(locale, item),
-                        locale,
-                      );
-                    });
+                  const onHosting = isHostingNavPath(pathname, locale, products);
                   const servicesActive = active && !onHosting && !onDomains;
                   return (
                     <div key={link.key}>
@@ -593,18 +567,26 @@ export function Navigation() {
                                     categoryItem.title,
                                   )}
                                 </SoftLink>
-                                {column.planSlugs.map((slug) => {
-                                  const item = serviceCatalog.find((s) => s.slug === slug);
-                                  if (!item) return null;
-                                  const href = serviceHref(locale, item);
+                                {shopHostingProductsForCategory(
+                                  products,
+                                  column.categorySlug,
+                                ).map((product) => {
+                                  const href = localizedHref(
+                                    locale,
+                                    `/diensten/${product.slug}`,
+                                  );
                                   const itemActive = publicPathMatches(
                                     pathname,
                                     href,
                                     locale,
                                   );
+                                  const name = localizeShopProduct(
+                                    product,
+                                    locale,
+                                  ).localizedName;
                                   return (
                                     <SoftLink
-                                      key={item.slug}
+                                      key={product.slug}
                                       href={href}
                                       className={cn(
                                         "block rounded-lg px-2 py-1.5 text-sm transition",
@@ -614,7 +596,12 @@ export function Navigation() {
                                       )}
                                       aria-current={itemActive ? "page" : undefined}
                                     >
-                                      {titleFor(item.slug, locale, item.title)}
+                                      {name ||
+                                        titleFor(
+                                          product.slug,
+                                          locale,
+                                          product.slug,
+                                        )}
                                     </SoftLink>
                                   );
                                 })}

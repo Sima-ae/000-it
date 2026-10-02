@@ -11,6 +11,7 @@ import {
   catalogGroupTitle,
 } from "@/content/fixweb/catalog-title";
 import { useShopCatalog } from "@/components/shop/ShopCatalogProvider";
+import { HOSTING_CATEGORY_SLUGS } from "@/lib/shop/catalog";
 import { localizedHref } from "@/i18n/pathnames";
 import { cn } from "@/lib/utils";
 
@@ -79,31 +80,8 @@ const featuredByGroup: Record<string, string[]> = {
     "community-management",
     "data-entry",
   ],
-  // Keep hosting plan order (Shared → Cloud → Email → Reseller → WP → VPS)
-  hosting: [
-    "web-hosting",
-    "domains",
-    "shared-hosting-basic",
-    "shared-hosting-business",
-    "shared-hosting-plus",
-    "cloud-hosting-start",
-    "cloud-hosting-basic",
-    "cloud-hosting-plus",
-    "email-hosting-basic",
-    "email-hosting-business",
-    "email-hosting-pro",
-    "reseller-hosting-start",
-    "reseller-hosting-basic",
-    "reseller-hosting-business",
-    "reseller-hosting-plus",
-    "wordpress-hosting-basic",
-    "wordpress-hosting-business",
-    "wordpress-hosting-plus",
-    "vps-hosting-start",
-    "vps-hosting-basic",
-    "vps-hosting-business",
-    "vps-hosting-plus",
-  ],
+  // Category pages + live plans from shop DB (no hardcoded product slugs)
+  hosting: ["web-hosting", "domains", ...HOSTING_CATEGORY_SLUGS],
 };
 
 function sortFeaturedItems(

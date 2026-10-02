@@ -33,9 +33,9 @@ const FULL_NAMES: Record<string, { nl: string; en: string }> = {
     nl: "E-mail Hosting Business",
     en: "Email Hosting Business",
   },
-  "email-hosting-pro": {
-    nl: "E-mail Hosting Pro",
-    en: "Email Hosting Pro",
+  "email-hosting-plus": {
+    nl: "E-mail Hosting Plus",
+    en: "Email Hosting Plus",
   },
   "vps-hosting-start": {
     nl: "VPS Hosting Start",
@@ -44,7 +44,7 @@ const FULL_NAMES: Record<string, { nl: string; en: string }> = {
 };
 
 const SHORT_NAME_RE =
-  /^(start|basic|plus|business|pro|cloud hosting start|cloud hosting basic|cloud hosting plus|e-?mail hosting basic|e-?mail hosting business|e-?mail hosting pro|vps hosting start)$/i;
+  /^(start|basic|plus|business|pro|cloud hosting start|cloud hosting basic|cloud hosting plus|e-?mail hosting basic|e-?mail hosting business|e-?mail hosting plus|vps hosting start)$/i;
 
 async function main() {
   const rows = await prisma.shopCatalogProduct.findMany({

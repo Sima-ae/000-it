@@ -24,14 +24,9 @@ import { getServiceCardMeta, getServiceContent } from "@/lib/fixweb-content";
 import { brandingFallbackForServiceSlug } from "@/lib/branding-images";
 import { getRequestBrand } from "@/lib/brand/server";
 import {
-  CLOUD_HOSTING_SLUG_ORDER,
-  EMAIL_HOSTING_SLUG_ORDER,
   getShopProductBySlug,
-  RESELLER_HOSTING_SLUG_ORDER,
-  SHARED_HOSTING_SLUG_ORDER,
-  shopProductsInSlugOrder,
-  VPS_HOSTING_SLUG_ORDER,
-  WORDPRESS_HOSTING_SLUG_ORDER,
+  shopHostingProductsForCategory,
+  type HostingCategorySlug,
 } from "@/lib/shop/catalog";
 import { loadShopCatalogFromDb } from "@/lib/shop/catalog-db";
 import { cn } from "@/lib/utils";
@@ -48,32 +43,17 @@ const aiInquiryBySlug: Record<
   "ai-in-website": { source: "AI_IN_WEBSITE", key: "web" },
 };
 
-const HOSTING_PLAN_PAGES = {
-  "shared-hosting": {
-    order: SHARED_HOSTING_SLUG_ORDER,
-    titleKey: "sharedHosting",
-  },
-  "cloud-hosting": {
-    order: CLOUD_HOSTING_SLUG_ORDER,
-    titleKey: "cloudHosting",
-  },
-  "email-hosting": {
-    order: EMAIL_HOSTING_SLUG_ORDER,
-    titleKey: "emailHosting",
-  },
-  "reseller-hosting": {
-    order: RESELLER_HOSTING_SLUG_ORDER,
-    titleKey: "resellerHosting",
-  },
-  "wordpress-hosting": {
-    order: WORDPRESS_HOSTING_SLUG_ORDER,
-    titleKey: "wordpressHosting",
-  },
-  "vps-hosting": {
-    order: VPS_HOSTING_SLUG_ORDER,
-    titleKey: "vpsHosting",
-  },
-} as const;
+const HOSTING_PLAN_PAGES: Record<
+  HostingCategorySlug,
+  { titleKey: "sharedHosting" | "cloudHosting" | "emailHosting" | "resellerHosting" | "wordpressHosting" | "vpsHosting" }
+> = {
+  "shared-hosting": { titleKey: "sharedHosting" },
+  "cloud-hosting": { titleKey: "cloudHosting" },
+  "email-hosting": { titleKey: "emailHosting" },
+  "reseller-hosting": { titleKey: "resellerHosting" },
+  "wordpress-hosting": { titleKey: "wordpressHosting" },
+  "vps-hosting": { titleKey: "vpsHosting" },
+};
 
 export async function CatalogServiceDetail({
   locale,
@@ -102,7 +82,7 @@ export async function CatalogServiceDetail({
   const shopCatalog = await loadShopCatalogFromDb();
   const shopProduct = getShopProductBySlug(slug);
   const hostingPlanProducts = hostingPlanPage
-    ? shopProductsInSlugOrder(shopCatalog, hostingPlanPage.order)
+    ? shopHostingProductsForCategory(shopCatalog, slug)
     : [];
   const canOrder = Boolean(
     shopProduct &&

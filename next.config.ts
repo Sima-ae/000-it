@@ -133,7 +133,8 @@ const nextConfig: NextConfig = {
         destination: "/:locale/shop/double-support-yearly",
         permanent: true,
       },
-      // Cloud hosting renamed: startup/professional/enterprise → start/basic/plus
+      // Hosting renames: cloud startup/professional/enterprise → start/basic/plus
+      // and email-hosting-pro → email-hosting-plus
       ...[
         "diensten",
         "services",
@@ -168,6 +169,7 @@ const nextConfig: NextConfig = {
             ["cloud-hosting-startup", "cloud-hosting-start"],
             ["cloud-hosting-professional", "cloud-hosting-basic"],
             ["cloud-hosting-enterprise", "cloud-hosting-plus"],
+            ["email-hosting-pro", "email-hosting-plus"],
           ] as const
         ).map(([from, to]) => ({
           source: `/:locale/${segment}/${from}`,
@@ -180,6 +182,7 @@ const nextConfig: NextConfig = {
           ["cloud-hosting-startup", "cloud-hosting-start"],
           ["cloud-hosting-professional", "cloud-hosting-basic"],
           ["cloud-hosting-enterprise", "cloud-hosting-plus"],
+          ["email-hosting-pro", "email-hosting-plus"],
         ] as const
       ).map(([from, to]) => ({
         source: `/:locale/shop/${from}`,
