@@ -76,10 +76,7 @@ export default async function KennisbankPage({
         <Reveal>
           <header className="mb-6 flex flex-wrap items-end justify-between gap-4">
             <div className="min-w-0 max-w-3xl">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
-                {t("brandEyebrow")}
-              </p>
-              <h1 className="font-display mt-1.5 text-3xl font-semibold tracking-tight text-primary md:text-4xl">
+              <h1 className="font-display text-3xl font-semibold tracking-tight text-primary md:text-4xl">
                 {t("title")}
               </h1>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-[0.95rem]">
