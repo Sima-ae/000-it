@@ -132,6 +132,12 @@ export default async function ShopPage({
 
       {!hostingOnly ? (
         <div className={serviceProducts.length > 0 ? "mt-16" : undefined}>
+          <WordPressCarePlansSection showTitle />
+        </div>
+      ) : null}
+
+      {!hostingOnly ? (
+        <div className="mt-16">
           <PricingPlans
             variant="embedded"
             plans={plans}
@@ -189,12 +195,6 @@ export default async function ShopPage({
         title={t("vpsHosting")}
         products={vpsHostingProducts}
       />
-
-      {!hostingOnly ? (
-        <div className="mt-16">
-          <WordPressCarePlansSection showTitle />
-        </div>
-      ) : null}
 
       {hostingOnly ? (
         <p className="mx-auto mt-auto max-w-2xl pt-16 text-center text-sm text-muted-foreground">
