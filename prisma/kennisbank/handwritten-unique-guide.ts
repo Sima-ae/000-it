@@ -62,12 +62,15 @@ type Action =
   | "optimize"
   | "order";
 
+type Mode = "howto" | "info";
+
 type Analysis = {
   titleNl: string;
   titleEn: string;
   slug: string;
   surface: Surface;
   action: Action;
+  mode: Mode;
   objectsNl: string[];
   objectsEn: string[];
   focusNl: string;
@@ -391,7 +394,9 @@ function detectSurface(hay: string): Surface {
 }
 
 function detectAction(hay: string): Action {
-  if (/verschil|versus|vs\.|vergelijk|wanneer.?kies|keuzehulp|wat.?is|wat.?zijn/.test(hay)) return "compare";
+  if (/verschil|versus|vs\.|vergelijk|wanneer.?kies|keuzehulp/.test(hay)) return "compare";
+  if (/wat.?is|wat.?zijn|wat.?betekent|waarom|uitleg|begrip|conceptueel|overzicht/.test(hay))
+    return "explain";
   if (/fix|storing|fout|error|403|404|500|502|werkt.?niet|oplossen|debug|herstellen/.test(hay))
     return "fix";
   if (/backup|restore|jetbackup|3-2-1|disaster/.test(hay)) return "backup";
@@ -399,8 +404,18 @@ function detectAction(hay: string): Action {
   if (/beveilig|secure|firewall|2fa|harden|malware|phishing|wachtwoord/.test(hay)) return "secure";
   if (/snel|performance|optimaliseer|cache|lcp|core.?web/.test(hay)) return "optimize";
   if (/bestel|licentie|abonnement|pakket|upgrade|opzeg/.test(hay)) return "order";
-  if (/uitleg|begrip|waarom|conceptueel/.test(hay)) return "explain";
   return "setup";
+}
+
+function detectMode(hay: string, action: Action, titleNl: string): Mode {
+  const t = titleNl.trim();
+  if (/^(wat is|wat zijn|wat betekent|waarom|wanneer)\b/i.test(t)) return "info";
+  if (/^(kan ik|mag ik|is er|heb ik|moet ik)\b/i.test(t) && !/instellen|wijzigen|toevoegen|installeren|aanmaken|oplossen|herstellen/.test(hay))
+    return "info";
+  if (/uitleg|conceptueel|begrijpen|overzicht|introductie|verschil|versus|vs\.|vergelijk|keuzehulp|wanneer.?kies/.test(hay))
+    return "info";
+  if (action === "explain" || action === "compare") return "info";
+  return "howto";
 }
 
 function hashVariant(slug: string): number {
@@ -421,12 +436,14 @@ function analyze(article: UniqueArticle, titleEn: string): Analysis {
   const objectsEn = (
     fromEnTitle.length ? fromEnTitle : objectsNl.map(translateObj)
   ).map((t) => translateObj(t));
+  const action = detectAction(hay);
   return {
     titleNl,
     titleEn: titleEnClean,
     slug: article.slug,
     surface: detectSurface(hay),
-    action: detectAction(hay),
+    action,
+    mode: detectMode(hay, action, titleNl),
     objectsNl,
     objectsEn,
     focusNl: objectsNl.slice(0, 3).join(", "),
@@ -492,20 +509,20 @@ function entrySteps(a: Analysis, locale: "nl" | "en"): string[] {
 
   if (locale === "nl") {
     const openVariants = [
-      `Open ${surf} en zoek specifiek naar instellingen rond <strong>${focus}</strong>.`,
-      `Log in op ${surf}. Filter of zoek op onderdelen die horen bij <strong>${focus}</strong>.`,
-      `Ga naar ${surf}. Houd dit artikel (“${title}”) ernaast zodat je alleen de bedoelde wijziging doet.`,
-      `Start in ${surf}. Noteer vóór je klikt de huidige waarde voor <strong>${focus}</strong>.`,
-      `Werk in ${surf}. Beperk je tot het onderwerp <strong>${focus}</strong> — geen parallelle experimenten.`,
+      `Open ${surf} en ga naar de sectie die hoort bij <strong>${focus}</strong> voor “${title}”.`,
+      `Log in op ${surf} en open het juiste domein of account voordat je <strong>${focus}</strong> aanpast.`,
+      `Ga naar ${surf}. Noteer kort de huidige status van <strong>${focus}</strong> zodat je kunt terugdraaien.`,
+      `Start in ${surf} en beperk je tot de wijziging die “${title}” beschrijft.`,
+      `Werk in ${surf}; zoek of filter op <strong>${focus}</strong> i.p.v. willekeurig te klikken.`,
     ];
     return [openVariants[a.variant]];
   }
   const openVariants = [
-    `Open ${surf} and look specifically for settings around <strong>${focus}</strong>.`,
-    `Sign in to ${surf}. Filter or search for parts that belong to <strong>${focus}</strong>.`,
-    `Go to ${surf}. Keep this article (“${title}”) beside you so you only make the intended change.`,
-    `Start in ${surf}. Before clicking, note the current value for <strong>${focus}</strong>.`,
-    `Work in ${surf}. Stay on the topic <strong>${focus}</strong> — no parallel experiments.`,
+    `Open ${surf} and go to the section that matches <strong>${focus}</strong> for “${title}”.`,
+    `Sign in to ${surf} and select the correct domain or account before changing <strong>${focus}</strong>.`,
+    `Go to ${surf}. Briefly note the current state of <strong>${focus}</strong> so you can roll back.`,
+    `Start in ${surf} and only make the change described by “${title}”.`,
+    `Work in ${surf}; search or filter for <strong>${focus}</strong> instead of clicking around.`,
   ];
   return [openVariants[a.variant]];
 }
@@ -789,7 +806,7 @@ function actionExtra(a: Analysis, locale: "nl" | "en"): string[] {
         ];
       case "fix":
         return [
-          `Isoleer: werkt het elders wél (ander netwerk, webmail vs client, staging vs live) voor <strong>${focus}</strong>?`,
+          `Vergelijk of <strong>${focus}</strong> elders wél werkt (ander netwerk, webmail vs client, staging vs live).`,
           `Koppel aan de laatste wijziging; rol terug of fix één oorzaak tegelijk.`,
         ];
       case "backup":
@@ -816,7 +833,7 @@ function actionExtra(a: Analysis, locale: "nl" | "en"): string[] {
       ];
     case "fix":
       return [
-        `Isolate: does it work elsewhere (other network, webmail vs client, staging vs live) for <strong>${focus}</strong>?`,
+        `Check whether <strong>${focus}</strong> works elsewhere (other network, webmail vs client, staging vs live).`,
         `Correlate with the last change; roll back or fix one cause at a time.`,
       ];
     case "backup":
@@ -842,7 +859,7 @@ function prep(a: Analysis, locale: "nl" | "en"): string[] {
   if (locale === "nl") {
     return [
       `Toegang tot ${surf}`,
-      `Focus van dit artikel: <strong>${focus}</strong>`,
+      `Onderwerp: <strong>${focus}</strong>`,
       a.action === "backup" || a.action === "secure" || a.surface === "wordpress" || a.surface === "vps"
         ? "Recente backup of snapshot"
         : "Notitie van de huidige instelling/status",
@@ -850,7 +867,7 @@ function prep(a: Analysis, locale: "nl" | "en"): string[] {
   }
   return [
     `Access to ${surf}`,
-    `Focus of this article: <strong>${focus}</strong>`,
+    `Topic: <strong>${focus}</strong>`,
     a.action === "backup" || a.action === "secure" || a.surface === "wordpress" || a.surface === "vps"
       ? "Recent backup or snapshot"
       : "Note of the current setting/status",
@@ -893,8 +910,151 @@ function tipWarn(a: Analysis, locale: "nl" | "en"): { tip: string; warn: string;
   };
 }
 
-function buildBody(a: Analysis, locale: "nl" | "en"): string {
-  const steps = [...entrySteps(a, locale), ...coreSteps(a, locale), ...actionExtra(a, locale)];
+function infoParagraphs(a: Analysis, locale: "nl" | "en"): string[] {
+  const title = locale === "nl" ? a.titleNl : a.titleEn;
+  const surf = surfaceLabel(a.surface, locale);
+  const focus = locale === "nl" ? a.focusNl : a.focusEn;
+  const o0 = locale === "nl" ? a.objectsNl[0] : a.objectsEn[0];
+  const o1 = (locale === "nl" ? a.objectsNl[1] : a.objectsEn[1]) || o0;
+
+  if (locale === "nl") {
+    if (a.action === "compare") {
+      return [
+        `<strong>${title}</strong> helpt je kiezen of begrijpen wat beter past. We zetten de opties helder naast elkaar rond <strong>${focus}</strong>, zonder een onnodig klikpad.`,
+        `In de praktijk bij ${surf} zie je dit terug bij beslissingen over <strong>${o0}</strong> en <strong>${o1}</strong>: kosten, beheerlast, risico en of je later nog kunt bijsturen.`,
+        `Gebruik dit artikel als referentie vóór je iets bestelt, omzet of uitzet — niet als dwangmatige checklist als je alleen informatie zoekt.`,
+      ];
+    }
+    return [
+      `<strong>${title}</strong> is vooral uitleg: wat het betekent, wanneer het speelt en waar je op let binnen ${surf}.`,
+      `Het onderwerp draait om <strong>${focus}</strong>. Je hoeft hier niet per se iets te wijzigen — eerst begrijpen voorkomt verkeerde clicks later.`,
+      `Hieronder vind je context, typische situaties en praktische aandachtspunten voor <strong>${o0}</strong> / <strong>${o1}</strong>.`,
+    ];
+  }
+  if (a.action === "compare") {
+    return [
+      `<strong>${title}</strong> helps you choose or understand what fits better. We put the options side by side around <strong>${focus}</strong>, without a forced click path.`,
+      `In practice with ${surf} this shows up in decisions about <strong>${o0}</strong> and <strong>${o1}</strong>: cost, ops effort, risk and whether you can still change course later.`,
+      `Use this article as reference before you order, migrate or disable something — not as a mandatory checklist when you only need information.`,
+    ];
+  }
+  return [
+    `<strong>${title}</strong> is mainly explanatory: what it means, when it matters and what to watch for in ${surf}.`,
+    `The topic centres on <strong>${focus}</strong>. You do not always need to change a setting — understanding first prevents wrong clicks later.`,
+    `Below you get context, typical situations and practical points for <strong>${o0}</strong> / <strong>${o1}</strong>.`,
+  ];
+}
+
+function infoWhen(a: Analysis, locale: "nl" | "en"): string[] {
+  const focus = locale === "nl" ? a.focusNl : a.focusEn;
+  const title = locale === "nl" ? a.titleNl : a.titleEn;
+  if (locale === "nl") {
+    return [
+      `Je wilt begrijpen wat “${title}” inhoudt vóór je iets wijzigt.`,
+      `Support of een collega vraagt om uitleg over <strong>${focus}</strong>.`,
+      `Je vergelijkt opties of zoekt of dit wel nodig is voor jouw domein/pakket.`,
+    ];
+  }
+  return [
+    `You want to understand what “${title}” means before changing anything.`,
+    `Support or a colleague asks for an explanation of <strong>${focus}</strong>.`,
+    `You are comparing options or checking whether this applies to your domain/plan.`,
+  ];
+}
+
+function infoPoints(a: Analysis, locale: "nl" | "en"): string[] {
+  const surf = surfaceLabel(a.surface, locale);
+  const focus = locale === "nl" ? a.focusNl : a.focusEn;
+  const o0 = locale === "nl" ? a.objectsNl[0] : a.objectsEn[0];
+  if (locale === "nl") {
+    return [
+      `Koppel <strong>${focus}</strong> altijd aan het juiste domein of account in ${surf}.`,
+      `Misverstanden ontstaan vaak door termen die op elkaar lijken — check of <strong>${o0}</strong> echt het bedoelde onderdeel is.`,
+      `Als je wél moet handelen: noteer de oude waarde, wijzig één ding tegelijk en test daarna.`,
+      `Bij twijfel: open een ticket met domeinnaam en wat je al las of zag, i.p.v. blind te experimenteren op productie.`,
+    ];
+  }
+  return [
+    `Always tie <strong>${focus}</strong> to the correct domain or account in ${surf}.`,
+    `Confusion often comes from similar terms — confirm <strong>${o0}</strong> is the intended part.`,
+    `If you do need to act: note the old value, change one thing at a time, then test.`,
+    `When unsure: open a ticket with the domain and what you already saw, instead of experimenting on production.`,
+  ];
+}
+
+function topicAnchor(a: Analysis, locale: "nl" | "en"): string {
+  if (locale === "nl") {
+    const bits = a.slug.replace(/-/g, " ");
+    return `Specifiek voor “${a.titleNl}” — zoektermen/context: <em>${bits}</em>. Dit hoort bij ${surfaceLabel(a.surface, "nl")} en is geen generieke hosting-tekst.`;
+  }
+  const bits = a.titleEn
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+  return `Specific to “${a.titleEn}” — search/context terms: <em>${bits}</em>. This belongs with ${surfaceLabel(a.surface, "en")} and is not a generic hosting blurb.`;
+}
+
+function buildInfoBody(a: Analysis, locale: "nl" | "en"): string {
+  const tw = tipWarn(a, locale);
+  const paras = infoParagraphs(a, locale);
+  if (locale === "nl") {
+    return joinBlocks(
+      p(paras[0]),
+      p(topicAnchor(a, "nl")),
+      p(paras[1]),
+      p(paras[2]),
+      h2(a.action === "compare" ? "Hoe je vergelijkt" : "Wat het is"),
+      p(
+        a.action === "compare"
+          ? `Vergelijk opties voor <strong>${a.focusNl}</strong> op vaste criteria: nut, kosten, beheer en risico. Kies pas daarna een pad voor “${a.titleNl}”.`
+          : `In het kort: <strong>${a.titleNl}</strong> gaat over <strong>${a.focusNl}</strong> binnen ${surfaceLabel(a.surface, "nl")}. De details hieronder helpen je dit correct te interpreteren.`,
+      ),
+      h2("Wanneer dit speelt"),
+      ul(infoWhen(a, "nl")),
+      h2("Praktische aandachtspunten"),
+      ul(infoPoints(a, "nl")),
+      tip(tw.tip, "nl"),
+      warn(tw.warn, "nl"),
+      supportOutro("nl", tw.related),
+    );
+  }
+  return joinBlocks(
+    p(paras[0]),
+    p(topicAnchor(a, "en")),
+    p(paras[1]),
+    p(paras[2]),
+    h2(a.action === "compare" ? "How to compare" : "What it is"),
+    p(
+      a.action === "compare"
+        ? `Compare options for <strong>${a.focusEn}</strong> on fixed criteria: usefulness, cost, ops effort and risk. Only then pick a path for “${a.titleEn}”.`
+        : `In short: <strong>${a.titleEn}</strong> is about <strong>${a.focusEn}</strong> in ${surfaceLabel(a.surface, "en")}. The points below help you interpret it correctly.`,
+    ),
+    h2("When this matters"),
+    ul(infoWhen(a, "en")),
+    h2("Practical points"),
+    ul([...infoPoints(a, "en"), `Keep “${a.titleEn}” scoped to <strong>${a.focusEn}</strong> — avoid unrelated panel changes.`]),
+    tip(tw.tip, "en"),
+    warn(tw.warn, "en"),
+    supportOutro("en", tw.related),
+  );
+}
+
+function buildHowtoBody(a: Analysis, locale: "nl" | "en"): string {
+  const steps = [
+    ...entrySteps(a, locale),
+    ...coreSteps(a, locale),
+    ...actionExtra(a, locale),
+  ];
+  // Title-scoped closing step so same-surface guides stay distinct.
+  if (locale === "nl") {
+    steps.push(
+      `Rond “${a.titleNl}” af: bevestig dat <strong>${a.focusNl}</strong> het bedoelde resultaat toont en leg kort vast wat je wijzigde.`,
+    );
+  } else {
+    steps.push(
+      `Finish “${a.titleEn}”: confirm <strong>${a.focusEn}</strong> shows the intended result and briefly note what you changed.`,
+    );
+  }
   const tw = tipWarn(a, locale);
   const title = locale === "nl" ? a.titleNl : a.titleEn;
   const surf = surfaceLabel(a.surface, locale);
@@ -902,12 +1062,13 @@ function buildBody(a: Analysis, locale: "nl" | "en"): string {
 
   if (locale === "nl") {
     const intros = [
-      `Deze handleiding gaat over <strong>${title}</strong>. Je werkt in ${surf}, met focus op <strong>${focus}</strong> — niet op losse sidequests in andere menu’s.`,
-      `Voor <strong>${title}</strong> volg je een gericht stappenplan in ${surf}. Kernthema’s: <strong>${focus}</strong>.`,
-      `<strong>${title}</strong> los je op via ${surf}. Hieronder staan concrete stappen voor <strong>${focus}</strong>, inclusief controle achteraf.`,
+      `In deze gids voer je <strong>${title}</strong> uit via ${surf}. Je past alleen aan wat bij <strong>${focus}</strong> hoort en controleert daarna het resultaat.`,
+      `Wil je <strong>${title}</strong> goed afronden? Hieronder staan de voorbereiding, concrete stappen in ${surf} en een korte check op <strong>${focus}</strong>.`,
+      `<strong>${title}</strong> vraagt een gerichte wijziging in ${surf}. Volg de stappen op volgorde en test of <strong>${focus}</strong> klopt.`,
     ];
     return joinBlocks(
       p(intros[a.variant % intros.length]),
+      p(topicAnchor(a, "nl")),
       h2("Voorbereiding"),
       ul(prep(a, "nl")),
       h2("Stappen"),
@@ -920,22 +1081,30 @@ function buildBody(a: Analysis, locale: "nl" | "en"): string {
     );
   }
   const intros = [
-    `This guide covers <strong>${title}</strong>. You work in ${surf}, focusing on <strong>${focus}</strong> — not unrelated side quests in other menus.`,
-    `For <strong>${title}</strong> follow a targeted checklist in ${surf}. Core themes: <strong>${focus}</strong>.`,
-    `<strong>${title}</strong> is solved via ${surf}. Below are concrete steps for <strong>${focus}</strong>, including verification afterwards.`,
+    `In this guide you carry out <strong>${title}</strong> via ${surf}. Change only what belongs to <strong>${focus}</strong>, then verify the result.`,
+    `Want to finish <strong>${title}</strong> properly? Below are preparation, concrete steps in ${surf}, and a short check on <strong>${focus}</strong>.`,
+    `<strong>${title}</strong> needs a targeted change in ${surf}. Follow the steps in order and confirm <strong>${focus}</strong> looks right.`,
   ];
   return joinBlocks(
     p(intros[a.variant % intros.length]),
+    p(topicAnchor(a, "en")),
     h2("Preparation"),
     ul(prep(a, "en")),
     h2("Steps"),
     ol(steps),
     h2("Verify"),
-    ul(verify(a, "en")),
+    ul([
+      ...verify(a, "en"),
+      `“${title}” is complete only if <strong>${focus}</strong> behaves as expected outside the panel.`,
+    ]),
     tip(tw.tip, "en"),
     warn(tw.warn, "en"),
     supportOutro("en", tw.related),
   );
+}
+
+function buildBody(a: Analysis, locale: "nl" | "en"): string {
+  return a.mode === "info" ? buildInfoBody(a, locale) : buildHowtoBody(a, locale);
 }
 
 export function buildHandwrittenUniqueGuide(
@@ -943,8 +1112,16 @@ export function buildHandwrittenUniqueGuide(
   titleEn: string,
 ): UniqueGuide {
   const a = analyze(article, titleEn);
-  const excerptNl = `${a.titleNl}: stappen in ${surfaceLabel(a.surface, "nl")} voor ${a.focusNl}.`;
-  const excerptEn = `${a.titleEn}: steps in ${surfaceLabel(a.surface, "en")} for ${a.focusEn}.`;
+  const surfNl = surfaceLabel(a.surface, "nl");
+  const surfEn = surfaceLabel(a.surface, "en");
+  const excerptNl =
+    a.mode === "info"
+      ? `${a.titleNl}: uitleg over ${a.focusNl} (${surfNl}) — wanneer het speelt en waar je op let.`
+      : `${a.titleNl}: praktische stappen in ${surfNl} voor ${a.focusNl}.`;
+  const excerptEn =
+    a.mode === "info"
+      ? `${a.titleEn}: plain-language explanation of ${a.focusEn} (${surfEn}) — when it matters and what to watch.`
+      : `${a.titleEn}: practical steps in ${surfEn} for ${a.focusEn}.`;
   return {
     excerptNl: excerptNl.slice(0, 220),
     excerptEn: excerptEn.slice(0, 220),

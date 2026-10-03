@@ -65,6 +65,20 @@ export const FILLER_PHRASES = [
   "Dit onderwerp komt vaak terug bij klanten van TripleZero iT",
   "Bepaal het doel van “",
   "Voer de wijziging uit die bij “",
+  "volg je een gericht stappenplan",
+  "follow a targeted checklist",
+  "Kernthema",
+  "Core themes:",
+  "Focus van dit artikel:",
+  "Focus of this article:",
+  "geen parallelle experimenten",
+  "no parallel experiments",
+  "Houd dit artikel (“",
+  "Keep this article (“",
+  "Isoleer: werkt het elders",
+  "Isolate: does it work elsewhere",
+  "losse sidequests",
+  "unrelated side quests",
 ] as const;
 
 /** True when body is wave/thicken template fluff, not a real guide. */

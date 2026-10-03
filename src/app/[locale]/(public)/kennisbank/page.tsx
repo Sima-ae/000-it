@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OpenLiveChatButton } from "@/components/chat/OpenLiveChatButton";
 import { Reveal } from "@/components/marketing/Reveal";
@@ -7,7 +6,6 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { KennisbankBrowseLayout } from "@/components/kennisbank/KennisbankBrowseLayout";
 import { KennisbankSearch } from "@/components/kennisbank/KennisbankSearch";
 import { listArticles, listCategories, topLevelCategories } from "@/lib/kennisbank";
-import { BRANDING_IMAGES } from "@/lib/branding-images";
 import {
   breadcrumbJsonLd,
   buildStaticPageMetadata,
@@ -90,16 +88,6 @@ export default async function KennisbankPage({
               <span className="rounded-md border border-border/60 bg-background/80 px-2.5 py-1 text-[11px] font-medium tabular-nums text-muted-foreground">
                 {total} {t("articlesLabel")}
               </span>
-              <div className="relative ms-1 hidden h-14 w-16 overflow-hidden lg:block">
-                <Image
-                  src={BRANDING_IMAGES.tabletMarketer}
-                  alt=""
-                  fill
-                  unoptimized
-                  sizes="64px"
-                  className="object-contain object-bottom"
-                />
-              </div>
             </div>
           </header>
         </Reveal>

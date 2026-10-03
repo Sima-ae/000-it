@@ -6,7 +6,6 @@ import { Reveal } from "@/components/marketing/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { KennisbankArticleList } from "@/components/kennisbank/KennisbankArticleList";
 import { KennisbankBrowseLayout } from "@/components/kennisbank/KennisbankBrowseLayout";
-import { KennisbankIllustration } from "@/components/kennisbank/KennisbankIllustration";
 import { KennisbankSearch } from "@/components/kennisbank/KennisbankSearch";
 import { getCategoryBySlug, listArticles, listCategories } from "@/lib/kennisbank";
 import { brandingImageForKennisbank } from "@/lib/branding-images";
@@ -124,30 +123,18 @@ export default async function KennisbankCategoryPage({ params }: Params) {
           collapseLabel={t("collapseCategory")}
         >
           <Reveal>
-            <header className="mb-6 overflow-hidden rounded-2xl border border-border/60 bg-background/75 shadow-sm">
-              <div className="grid md:grid-cols-[minmax(0,1.35fr)_minmax(11rem,0.65fr)]">
-                <div className="flex flex-col justify-center px-5 py-5 md:px-6 md:py-6">
-                  <h1 className="font-display text-2xl font-semibold tracking-tight text-accent md:text-3xl">
-                    {cat.name}
-                  </h1>
-                  {cat.description ? (
-                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                      {cat.description}
-                    </p>
-                  ) : null}
-                  <p className="mt-3 inline-flex w-fit items-center rounded-md bg-primary/10 px-2 py-0.5 text-[11px] font-semibold tabular-nums text-primary">
-                    {articles.length} {t("articlesInCategory")}
-                  </p>
-                </div>
-                <div className="border-t border-border/50 md:border-t-0 md:border-s md:border-border/50">
-                  <KennisbankIllustration
-                    categorySlug={category}
-                    categoryLabel={cat.name}
-                    footerLabel={t("illustrationFooter")}
-                    variant="compact"
-                  />
-                </div>
-              </div>
+            <header className="mb-6 overflow-hidden rounded-2xl border border-border/60 bg-background/75 px-5 py-5 shadow-sm md:px-6 md:py-6">
+              <h1 className="font-display text-2xl font-semibold tracking-tight text-accent md:text-3xl">
+                {cat.name}
+              </h1>
+              {cat.description ? (
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {cat.description}
+                </p>
+              ) : null}
+              <p className="mt-3 inline-flex w-fit items-center rounded-md bg-primary/10 px-2 py-0.5 text-[11px] font-semibold tabular-nums text-primary">
+                {articles.length} {t("articlesInCategory")}
+              </p>
             </header>
           </Reveal>
 
