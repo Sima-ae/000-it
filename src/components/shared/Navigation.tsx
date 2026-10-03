@@ -273,7 +273,12 @@ export function Navigation() {
             <AccountMenu
               className={cn(isExtraHosting && "order-3 lg:order-2")}
             />
-            <div className={cn(isExtraHosting && "order-4 lg:order-3")}>
+            <div
+              className={cn(
+                "hidden lg:block",
+                isExtraHosting && "order-4 lg:order-3",
+              )}
+            >
               <ThemeToggle />
             </div>
             <LanguageSwitcher
@@ -284,6 +289,9 @@ export function Navigation() {
 
         {open && (
           <div className="max-h-[70vh] overflow-y-auto border-t border-border/60 px-3 py-3 lg:hidden">
+            <div className="mb-2 flex items-center justify-end border-b border-border/50 pb-2">
+              <ThemeToggle className="text-muted-foreground hover:text-foreground" />
+            </div>
             <div className="flex flex-col gap-1">
               {primaryLinks.map((link) => {
                 const href = localizedHref(locale, link.href);
