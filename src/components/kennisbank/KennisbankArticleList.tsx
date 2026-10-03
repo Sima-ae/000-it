@@ -3,6 +3,7 @@
 import { SoftLink } from "@/components/shared/SoftLink";
 import { Reveal } from "@/components/marketing/Reveal";
 import type { KennisbankArticleListItem } from "@/lib/kennisbank";
+import { articleHrefCategorySlug } from "@/lib/kennisbank-path";
 import { localizedHref } from "@/i18n/pathnames";
 
 /** Idle (no search) article list for a category page. */
@@ -11,11 +12,13 @@ export function KennisbankArticleList({
   locale,
   categorySlug,
   emptyLabel,
+  categories = [],
 }: {
   articles: KennisbankArticleListItem[];
   locale: string;
   categorySlug: string;
   emptyLabel: string;
+  categories?: { slug: string; parentSlug?: string | null }[];
 }) {
   if (!articles.length) {
     return (
@@ -33,7 +36,7 @@ export function KennisbankArticleList({
             <SoftLink
               href={localizedHref(
                 locale,
-                `/kennisbank/${categorySlug}/${article.slug}`,
+                `/kennisbank/${articleHrefCategorySlug(article.categorySlugs, categorySlug, categories)}/${article.slug}`,
               )}
               prefetch={false}
               className="group flex items-start gap-3 rounded-xl border border-border/60 bg-background/75 px-3.5 py-3 shadow-sm transition hover:border-primary/35 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 sm:gap-3.5 sm:px-4"

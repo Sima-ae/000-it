@@ -13,6 +13,10 @@ import {
   listArticles,
   listCategories,
 } from "@/lib/kennisbank";
+import {
+  articleHrefCategorySlug,
+  articleMatchesBrowseCategory,
+} from "@/lib/kennisbank-path";
 import { brandingImageForKennisbank } from "@/lib/branding-images";
 import { localizedHref } from "@/i18n/pathnames";
 import {
@@ -98,19 +102,28 @@ export default async function KennisbankArticlePage({ params }: Params) {
     });
   if (!slug) notFound();
 
+  const allCategories = await listCategories({ locale, hostingOnly }).catch(
+    () => [],
+  );
   const cat = await getCategoryBySlug(category, { locale, hostingOnly });
   const article = await getArticleBySlug(slug, { locale, hostingOnly });
   if (!cat || !article) notFound();
-  if (!article.categorySlugs.includes(category)) notFound();
+  // Parent category pages list child-linked articles; allow those URLs too.
+  if (
+    !articleMatchesBrowseCategory(
+      article.categorySlugs,
+      category,
+      allCategories,
+    )
+  ) {
+    notFound();
+  }
 
   const related = (
     await listArticles({ locale, categorySlug: category, hostingOnly })
   )
     .filter((a) => a.slug !== article.slug)
     .slice(0, 6);
-  const allCategories = await listCategories({ locale, hostingOnly }).catch(
-    () => [],
-  );
 
   const bodyWithIds = injectHeadingIds(article.bodyHtml);
   const toc = extractToc(bodyWithIds);
@@ -264,7 +277,7 @@ export default async function KennisbankArticlePage({ params }: Params) {
                     <SoftLink
                       href={localizedHref(
                         locale,
-                        `/kennisbank/${category}/${item.slug}`,
+                        `/kennisbank/${articleHrefCategorySlug(item.categorySlugs, category, allCategories)}/${item.slug}`,
                       )}
                       prefetch={false}
                       className="block h-full"

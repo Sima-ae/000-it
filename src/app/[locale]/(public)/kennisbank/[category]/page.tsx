@@ -188,6 +188,7 @@ export default async function KennisbankCategoryPage({ params }: Params) {
               articles={articles}
               locale={locale}
               categorySlug={category}
+              categories={allCategories}
               emptyLabel={t("emptyArticles")}
             />
           </KennisbankSearch>
