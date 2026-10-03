@@ -102,7 +102,7 @@ export const BRANDS: Record<SiteBrandId, BrandPublicConfig> = {
     staffBaseUrl: "https://000-it.com",
     logoSrc: "/branding/extrahosting/WEBLOGO-ExtraHosting.png",
     logoAlt: "Extra Hosting",
-    ogImage: "/branding/extrahosting/WEBLOGO-ExtraHosting.png",
+    ogImage: "/branding/extrahosting/eh-home-aisle-walk.jpg",
     favicon: "/branding/FAVICON-EXTRA-HOSTING.png",
     dataBrand: "extrahosting",
     catalogMode: "domains_hosting",

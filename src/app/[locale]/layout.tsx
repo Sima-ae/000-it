@@ -88,10 +88,10 @@ export async function generateMetadata(): Promise<Metadata> {
       images: [
         {
           url: ogImage,
-          width: 600,
-          height: 200,
+          width: 1280,
+          height: 720,
           alt: EXTRA_HOSTING_PUBLIC_NAME,
-          type: "image/png",
+          type: "image/jpeg",
         },
       ],
     },

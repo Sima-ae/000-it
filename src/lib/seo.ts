@@ -54,8 +54,8 @@ function buildSiteSeo(brandId: SiteBrandId = resolveSeoBrandId()) {
       `https://${brand.primaryHost}`,
     email: brand.contactEmail,
     defaultOgImage: brand.ogImage,
-    defaultOgImageWidth: brandId === "extrahosting" ? 600 : 2000,
-    defaultOgImageHeight: brandId === "extrahosting" ? 200 : 2000,
+    defaultOgImageWidth: brandId === "extrahosting" ? 1280 : 2000,
+    defaultOgImageHeight: brandId === "extrahosting" ? 720 : 2000,
     defaultDescription: brand.defaultDescription,
     defaultKeywords: brand.defaultKeywords,
     brandId,
@@ -356,10 +356,10 @@ export function ogImageDimensions(pathOrUrl?: string | null) {
       height: siteSeoForBrand("triplezero").defaultOgImageHeight,
     };
   }
-  if (src.includes("extrahosting")) {
+  if (src.includes("eh-home-aisle-walk") || src.includes("/branding/extrahosting/")) {
     return {
-      width: seo.brandId === "extrahosting" ? seo.defaultOgImageWidth : 600,
-      height: seo.brandId === "extrahosting" ? seo.defaultOgImageHeight : 200,
+      width: siteSeoForBrand("extrahosting").defaultOgImageWidth,
+      height: siteSeoForBrand("extrahosting").defaultOgImageHeight,
     };
   }
   return { width: 1200, height: 630 };
