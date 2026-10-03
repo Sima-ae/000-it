@@ -1140,7 +1140,15 @@
     "searchEmpty": "Nu s-au găsit rezultate. Încercați diferite cuvinte cheie.",
     "searchLoading": "Se caută…",
     "searchInCategory": "În {category}",
-    "searchElsewhere": "În altă parte în baza de cunoștințe"
+    "searchElsewhere": "În altă parte în baza de cunoștințe",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Informații",

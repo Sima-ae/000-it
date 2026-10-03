@@ -1140,7 +1140,15 @@
     "searchEmpty": "Nuk u gjet asnjë rezultat. Provoni fjalë kyçe të ndryshme.",
     "searchLoading": "Po kërkon…",
     "searchInCategory": "në {category}",
-    "searchElsewhere": "Diku tjetër në bazën e njohurive"
+    "searchElsewhere": "Diku tjetër në bazën e njohurive",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Informacion",

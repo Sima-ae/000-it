@@ -1401,7 +1401,15 @@
     "illustrationFooter": "TripleZero iT kennisbank",
     "seoTitleSuffix": "Kennisbank",
     "tipLabel": "Tip",
-    "warnLabel": "Let op"
+    "warnLabel": "Let op",
+    "browseLabel": "Categorieën",
+    "labelsTitle": "Labels",
+    "popularTitle": "Populair",
+    "showFilters": "Toon filters",
+    "hideFilters": "Verberg filters",
+    "mostViewed": "Meest bekeken",
+    "expandCategory": "Subcategorieën tonen",
+    "collapseCategory": "Subcategorieën verbergen"
   },
   "faqPage": {
     "eyebrow": "Informatie",

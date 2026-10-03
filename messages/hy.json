@@ -1140,7 +1140,15 @@
     "searchEmpty": "Ոչ մի արդյունք չի գտնվել: Փորձեք տարբեր հիմնաբառեր:",
     "searchLoading": "Որոնում…",
     "searchInCategory": "{category}-ում",
-    "searchElsewhere": "Գիտելիքների բազայի մեկ այլ տեղ"
+    "searchElsewhere": "Գիտելիքների բազայի մեկ այլ տեղ",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Տեղեկություն",

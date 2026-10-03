@@ -1140,7 +1140,15 @@
     "searchEmpty": "没有找到结果。尝试不同的关键词。",
     "searchLoading": "正在寻找...",
     "searchInCategory": "在{category}中",
-    "searchElsewhere": "知识库中的其他地方"
+    "searchElsewhere": "知识库中的其他地方",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "信息",

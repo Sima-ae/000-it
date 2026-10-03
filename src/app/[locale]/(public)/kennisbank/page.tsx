@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OpenLiveChatButton } from "@/components/chat/OpenLiveChatButton";
 import { Reveal } from "@/components/marketing/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { KennisbankBrowseLayout } from "@/components/kennisbank/KennisbankBrowseLayout";
 import { KennisbankSearch } from "@/components/kennisbank/KennisbankSearch";
 import { listArticles, listCategories, topLevelCategories } from "@/lib/kennisbank";
 import { BRANDING_IMAGES } from "@/lib/branding-images";
@@ -43,12 +44,12 @@ export default async function KennisbankPage({
   const brand = await getRequestBrand();
   const hostingOnly = brand.catalogMode === "domains_hosting";
   const t = await getTranslations({ locale, namespace: "kennisbank" });
+  let allCategories: Awaited<ReturnType<typeof listCategories>> = [];
   let categories: Awaited<ReturnType<typeof listCategories>> = [];
   let total = 0;
   try {
-    categories = topLevelCategories(
-      await listCategories({ locale, hostingOnly }),
-    );
+    allCategories = await listCategories({ locale, hostingOnly });
+    categories = topLevelCategories(allCategories);
     const articles = await listArticles({ locale, hostingOnly });
     total = articles.length;
   } catch (error) {
@@ -71,7 +72,7 @@ export default async function KennisbankPage({
         className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-linear-to-b from-primary/10 via-accent/4 to-transparent"
         aria-hidden
       />
-      <div className="relative mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-10">
+      <div className="relative mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-10">
         <Reveal>
           <header className="mb-6 flex flex-wrap items-end justify-between gap-4">
             <div className="min-w-0 max-w-3xl">
@@ -106,43 +107,56 @@ export default async function KennisbankPage({
           </header>
         </Reveal>
 
-        <KennisbankSearch
+        <KennisbankBrowseLayout
           locale={locale}
-          categories={categories}
-          articlesLabel={t("articlesLabel")}
-          searchPlaceholder={t("searchPlaceholder")}
-          searchArticlesLabel={t("searchArticlesLabel")}
-          searchCategoriesLabel={t("searchCategoriesLabel")}
-          searchEmptyLabel={t("searchEmpty")}
-          searchLoadingLabel={t("searchLoading")}
-          searchInCategoryLabel={t.raw("searchInCategory") as string}
-          searchElsewhereLabel={t("searchElsewhere")}
-        />
+          categories={allCategories}
+          hostingOnly={hostingOnly}
+          browseLabel={t("browseLabel")}
+          labelsTitle={t("labelsTitle")}
+          popularTitle={t("popularTitle")}
+          showFiltersLabel={t("showFilters")}
+          hideFiltersLabel={t("hideFilters")}
+          expandLabel={t("expandCategory")}
+          collapseLabel={t("collapseCategory")}
+        >
+          <KennisbankSearch
+            locale={locale}
+            categories={categories}
+            articlesLabel={t("articlesLabel")}
+            searchPlaceholder={t("searchPlaceholder")}
+            searchArticlesLabel={t("searchArticlesLabel")}
+            searchCategoriesLabel={t("searchCategoriesLabel")}
+            searchEmptyLabel={t("searchEmpty")}
+            searchLoadingLabel={t("searchLoading")}
+            searchInCategoryLabel={t.raw("searchInCategory") as string}
+            searchElsewhereLabel={t("searchElsewhere")}
+          />
 
-        <div className="mt-4 flex flex-wrap gap-2 sm:hidden">
-          <span className="rounded-md border border-border/60 bg-background/80 px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
-            {categories.length} {t("categoriesLabel")}
-          </span>
-          <span className="rounded-md border border-border/60 bg-background/80 px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
-            {total} {t("articlesLabel")}
-          </span>
-        </div>
-
-        <aside className="mt-8 rounded-2xl border border-border/60 bg-background/70 px-5 py-4 shadow-sm md:px-6">
-          <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div className="min-w-0 max-w-xl">
-              <h2 className="font-display text-base font-semibold tracking-tight text-primary md:text-lg">
-                {t("ctaTitle")}
-              </h2>
-              <p className="mt-1 text-xs leading-relaxed text-muted-foreground md:text-sm">
-                {t("ctaBody")}
-              </p>
-            </div>
-            <OpenLiveChatButton size="sm" className="shrink-0 rounded-xl">
-              {t("ctaButton")}
-            </OpenLiveChatButton>
+          <div className="mt-4 flex flex-wrap gap-2 sm:hidden">
+            <span className="rounded-md border border-border/60 bg-background/80 px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
+              {categories.length} {t("categoriesLabel")}
+            </span>
+            <span className="rounded-md border border-border/60 bg-background/80 px-2.5 py-1 text-[11px] font-medium text-muted-foreground">
+              {total} {t("articlesLabel")}
+            </span>
           </div>
-        </aside>
+
+          <aside className="mt-8 rounded-2xl border border-border/60 bg-background/70 px-5 py-4 shadow-sm md:px-6">
+            <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div className="min-w-0 max-w-xl">
+                <h2 className="font-display text-base font-semibold tracking-tight text-primary md:text-lg">
+                  {t("ctaTitle")}
+                </h2>
+                <p className="mt-1 text-xs leading-relaxed text-muted-foreground md:text-sm">
+                  {t("ctaBody")}
+                </p>
+              </div>
+              <OpenLiveChatButton size="sm" className="shrink-0 rounded-xl">
+                {t("ctaButton")}
+              </OpenLiveChatButton>
+            </div>
+          </aside>
+        </KennisbankBrowseLayout>
       </div>
     </div>
   );

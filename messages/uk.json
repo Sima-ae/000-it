@@ -1140,7 +1140,15 @@
     "searchEmpty": "Результатів не знайдено. Спробуйте різні ключові слова.",
     "searchLoading": "Пошук…",
     "searchInCategory": "У {category}",
-    "searchElsewhere": "В іншому місці бази знань"
+    "searchElsewhere": "В іншому місці бази знань",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Інформація",

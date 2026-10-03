@@ -1140,7 +1140,15 @@
     "searchEmpty": "Heç bir nəticə tapılmadı. Fərqli açar sözlər sınayın.",
     "searchLoading": "Axtarılır...",
     "searchInCategory": "{category}",
-    "searchElsewhere": "Bilik bazasında başqa yerdə"
+    "searchElsewhere": "Bilik bazasında başqa yerdə",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Məlumat",

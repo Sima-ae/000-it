@@ -1165,7 +1165,15 @@
     "seoTitleSuffix": "ਗਿਆਨ ਅਧਾਰ",
     "tipLabel": "ਟਿਪ",
     "warnLabel": "ਨੋਟ ਕਰੋ",
-    "subcategoriesLabel": "ਉਪਸ਼੍ਰੇਣੀਆਂ"
+    "subcategoriesLabel": "ਉਪਸ਼੍ਰੇਣੀਆਂ",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "ਜਾਣਕਾਰੀ",

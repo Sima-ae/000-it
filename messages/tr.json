@@ -1140,7 +1140,15 @@
     "searchEmpty": "Sonuç bulunamadı. Farklı anahtar kelimeler deneyin.",
     "searchLoading": "Arama…",
     "searchInCategory": "{category} içinde",
-    "searchElsewhere": "Bilgi tabanının başka bir yerinde"
+    "searchElsewhere": "Bilgi tabanının başka bir yerinde",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Bilgi",

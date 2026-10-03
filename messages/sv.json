@@ -1140,7 +1140,15 @@
     "searchEmpty": "Inga resultat hittades. Prova olika sökord.",
     "searchLoading": "Sökande…",
     "searchInCategory": "I {category}",
-    "searchElsewhere": "Någon annanstans i kunskapsbasen"
+    "searchElsewhere": "Någon annanstans i kunskapsbasen",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Information",

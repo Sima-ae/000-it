@@ -1140,7 +1140,15 @@
     "searchEmpty": "Не се пронајдени резултати. Обидете се со различни клучни зборови.",
     "searchLoading": "Се бара…",
     "searchInCategory": "Во {category}",
-    "searchElsewhere": "На друго место во базата на знаење"
+    "searchElsewhere": "На друго место во базата на знаење",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Информации",

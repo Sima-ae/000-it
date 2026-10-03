@@ -1140,7 +1140,15 @@
     "searchEmpty": "Ingen resultater fundet. Prøv forskellige søgeord.",
     "searchLoading": "Søger...",
     "searchInCategory": "I {category}",
-    "searchElsewhere": "Andre steder i vidensbasen"
+    "searchElsewhere": "Andre steder i vidensbasen",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Information",

@@ -1140,7 +1140,15 @@
     "searchEmpty": "لم يتم العثور على نتائج. جرب كلمات رئيسية مختلفة.",
     "searchLoading": "البحث…",
     "searchInCategory": "في {category}",
-    "searchElsewhere": "في مكان آخر في قاعدة المعرفة"
+    "searchElsewhere": "في مكان آخر في قاعدة المعرفة",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "معلومات",

@@ -1140,7 +1140,15 @@
     "searchEmpty": "No se encontraron resultados. Pruebe diferentes palabras clave.",
     "searchLoading": "Búsqueda…",
     "searchInCategory": "En {category}",
-    "searchElsewhere": "En otras partes de la base de conocimientos"
+    "searchElsewhere": "En otras partes de la base de conocimientos",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Información",

@@ -1165,7 +1165,15 @@
     "seoTitleSuffix": "నాలెడ్జ్ బేస్",
     "tipLabel": "చిట్కా",
     "warnLabel": "గమనిక",
-    "subcategoriesLabel": "ఉపవర్గాలు"
+    "subcategoriesLabel": "ఉపవర్గాలు",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "సమాచారం",

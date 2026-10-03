@@ -1165,7 +1165,15 @@
     "seoTitleSuffix": "জ্ঞানের ভিত্তি",
     "tipLabel": "টিপ",
     "warnLabel": "দ্রষ্টব্য",
-    "subcategoriesLabel": "উপশ্রেণী"
+    "subcategoriesLabel": "উপশ্রেণী",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "তথ্য",

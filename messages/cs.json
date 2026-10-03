@@ -1140,7 +1140,15 @@
     "searchEmpty": "Nebyly nalezeny žádné výsledky. Zkuste jiná klíčová slova.",
     "searchLoading": "Vyhledávání…",
     "searchInCategory": "V {category}",
-    "searchElsewhere": "Jinde ve znalostní bázi"
+    "searchElsewhere": "Jinde ve znalostní bázi",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Informace",

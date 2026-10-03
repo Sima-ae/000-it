@@ -1401,7 +1401,15 @@
     "seoTitleSuffix": "Knowledge base",
     "tipLabel": "Tip",
     "warnLabel": "Note",
-    "subcategoriesLabel": "Subcategories"
+    "subcategoriesLabel": "Subcategories",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Information",

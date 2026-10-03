@@ -1165,7 +1165,15 @@
     "seoTitleSuffix": "علم کی بنیاد",
     "tipLabel": "ٹپ",
     "warnLabel": "نوٹ",
-    "subcategoriesLabel": "ذیلی زمرہ جات"
+    "subcategoriesLabel": "ذیلی زمرہ جات",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "معلومات",

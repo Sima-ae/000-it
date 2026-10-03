@@ -1140,7 +1140,15 @@
     "searchEmpty": "Tuloksia ei löytynyt. Kokeile eri avainsanoja.",
     "searchLoading": "Haetaan…",
     "searchInCategory": "Luokassa {category}",
-    "searchElsewhere": "Muualla tietokannassa"
+    "searchElsewhere": "Muualla tietokannassa",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Tiedot",

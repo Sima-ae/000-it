@@ -1140,7 +1140,15 @@
     "searchEmpty": "Nenašli sa žiadne výsledky. Skúste iné kľúčové slová.",
     "searchLoading": "Hľadá sa…",
     "searchInCategory": "V kategórii {category}",
-    "searchElsewhere": "Inde v znalostnej báze"
+    "searchElsewhere": "Inde v znalostnej báze",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Informácie",

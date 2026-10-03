@@ -6,10 +6,12 @@ import { GlassCard } from "@/components/marketing/GlassCard";
 import { Reveal } from "@/components/marketing/Reveal";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { KennisbankArticleBody } from "@/components/kennisbank/KennisbankArticleBody";
+import { KennisbankBrowseLayout } from "@/components/kennisbank/KennisbankBrowseLayout";
 import {
   getArticleBySlug,
   getCategoryBySlug,
   listArticles,
+  listCategories,
 } from "@/lib/kennisbank";
 import { brandingImageForKennisbank } from "@/lib/branding-images";
 import { localizedHref } from "@/i18n/pathnames";
@@ -106,6 +108,9 @@ export default async function KennisbankArticlePage({ params }: Params) {
   )
     .filter((a) => a.slug !== article.slug)
     .slice(0, 6);
+  const allCategories = await listCategories({ locale, hostingOnly }).catch(
+    () => [],
+  );
 
   const bodyWithIds = injectHeadingIds(article.bodyHtml);
   const toc = extractToc(bodyWithIds);
@@ -145,8 +150,8 @@ export default async function KennisbankArticlePage({ params }: Params) {
         className="pointer-events-none absolute inset-x-0 top-0 h-80 bg-linear-to-b from-primary/10 via-transparent to-transparent"
         aria-hidden
       />
-      <div className="relative mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16">
-        <nav className="mb-8 text-sm text-muted-foreground">
+      <div className="relative mx-auto max-w-7xl px-4 py-10 md:px-6 md:py-14">
+        <nav className="mb-6 text-sm text-muted-foreground">
           <SoftLink
             href={localizedHref(locale, "/kennisbank")}
             className="transition hover:text-foreground"
@@ -175,93 +180,110 @@ export default async function KennisbankArticlePage({ params }: Params) {
           <span className="text-foreground line-clamp-1">{article.title}</span>
         </nav>
 
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_16rem] lg:items-start">
-          <article>
-            <Reveal>
-              <header className="mb-8 rounded-[1.75rem] border border-border/60 bg-background/70 p-6 shadow-sm md:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">
-                  {cat.name}
-                </p>
-                <h1 className="font-display mt-3 text-3xl font-semibold tracking-tight text-primary md:text-4xl text-balance">
-                  {article.title}
-                </h1>
-                <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground text-pretty">
-                  {article.excerpt}
-                </p>
-                {article.categoryNames.length > 1 ? (
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {article.categorySlugs.map((s, i) => (
-                      <SoftLink
-                        key={s}
-                        href={localizedHref(locale, `/kennisbank/${s}`)}
-                        className="rounded-full border border-border/70 bg-muted/30 px-3 py-1 text-xs text-muted-foreground transition hover:border-primary/40 hover:text-foreground"
-                      >
-                        {article.categoryNames[i]}
-                      </SoftLink>
-                    ))}
-                  </div>
-                ) : null}
-              </header>
-            </Reveal>
+        <KennisbankBrowseLayout
+          locale={locale}
+          categories={allCategories}
+          activeSlug={category}
+          hostingOnly={hostingOnly}
+          browseLabel={t("browseLabel")}
+          labelsTitle={t("labelsTitle")}
+          popularTitle={t("popularTitle")}
+          showFiltersLabel={t("showFilters")}
+          hideFiltersLabel={t("hideFilters")}
+          expandLabel={t("expandCategory")}
+          collapseLabel={t("collapseCategory")}
+        >
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_14rem] lg:items-start">
+            <article>
+              <Reveal>
+                <header className="mb-8 rounded-[1.75rem] border border-border/60 bg-background/70 p-6 shadow-sm md:p-8">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">
+                    {cat.name}
+                  </p>
+                  <h1 className="font-display mt-3 text-3xl font-semibold tracking-tight text-primary md:text-4xl text-balance">
+                    {article.title}
+                  </h1>
+                  <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground text-pretty">
+                    {article.excerpt}
+                  </p>
+                  {article.categoryNames.length > 1 ? (
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {article.categorySlugs.map((s, i) => (
+                        <SoftLink
+                          key={s}
+                          href={localizedHref(locale, `/kennisbank/${s}`)}
+                          className="rounded-full border border-border/70 bg-muted/30 px-3 py-1 text-xs text-muted-foreground transition hover:border-primary/40 hover:text-foreground"
+                        >
+                          {article.categoryNames[i]}
+                        </SoftLink>
+                      ))}
+                    </div>
+                  ) : null}
+                </header>
+              </Reveal>
 
-            <GlassCard interactive={false} className="p-6 md:p-9">
-              <KennisbankArticleBody html={bodyWithIds} />
-            </GlassCard>
-          </article>
-
-          <aside className="hidden lg:sticky lg:top-28 lg:block">
-            {toc.length ? (
-              <GlassCard className="p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-                  {t("contents")}
-                </p>
-                <ul className="mt-3 space-y-2">
-                  {toc.map((item) => (
-                    <li key={item.id}>
-                      <a
-                        href={`#${item.id}`}
-                        className="block text-sm leading-snug text-muted-foreground transition hover:text-primary"
-                      >
-                        {item.text}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+              <GlassCard interactive={false} className="p-6 md:p-9">
+                <KennisbankArticleBody html={bodyWithIds} />
               </GlassCard>
-            ) : null}
-          </aside>
-        </div>
+            </article>
 
-        {related.length ? (
-          <aside className="mt-14">
-            <h2 className="font-display text-2xl font-semibold tracking-tight text-primary">
-              {t("relatedTitle")}
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              {t("relatedSubtitle")}
-            </p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {related.map((item) => (
-                <li key={item.id}>
-                  <SoftLink
-                    href={localizedHref(locale, `/kennisbank/${category}/${item.slug}`)}
-                    prefetch={false}
-                    className="block h-full"
-                  >
-                    <GlassCard className="group h-full p-5 transition hover:border-primary/40 hover:shadow-md">
-                      <h3 className="font-display text-base font-semibold tracking-tight text-primary">
-                        {item.title}
-                      </h3>
-                      <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
-                        {item.excerpt}
-                      </p>
-                    </GlassCard>
-                  </SoftLink>
-                </li>
-              ))}
-            </ul>
-          </aside>
-        ) : null}
+            <aside className="hidden lg:sticky lg:top-28 lg:block">
+              {toc.length ? (
+                <GlassCard className="p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                    {t("contents")}
+                  </p>
+                  <ul className="mt-3 space-y-2">
+                    {toc.map((item) => (
+                      <li key={item.id}>
+                        <a
+                          href={`#${item.id}`}
+                          className="block text-sm leading-snug text-muted-foreground transition hover:text-primary"
+                        >
+                          {item.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </GlassCard>
+              ) : null}
+            </aside>
+          </div>
+
+          {related.length ? (
+            <aside className="mt-14">
+              <h2 className="font-display text-2xl font-semibold tracking-tight text-primary">
+                {t("relatedTitle")}
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                {t("relatedSubtitle")}
+              </p>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {related.map((item) => (
+                  <li key={item.id}>
+                    <SoftLink
+                      href={localizedHref(
+                        locale,
+                        `/kennisbank/${category}/${item.slug}`,
+                      )}
+                      prefetch={false}
+                      className="block h-full"
+                    >
+                      <GlassCard className="group h-full p-5 transition hover:border-primary/40 hover:shadow-md">
+                        <h3 className="font-display text-base font-semibold tracking-tight text-primary">
+                          {item.title}
+                        </h3>
+                        <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
+                          {item.excerpt}
+                        </p>
+                      </GlassCard>
+                    </SoftLink>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          ) : null}
+        </KennisbankBrowseLayout>
       </div>
     </div>
   );

@@ -1140,7 +1140,15 @@
     "searchEmpty": "結果が見つかりませんでした。別のキーワードを試してください。",
     "searchLoading": "検索中…",
     "searchInCategory": "{category} で",
-    "searchElsewhere": "ナレッジベースの他の場所"
+    "searchElsewhere": "ナレッジベースの他の場所",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "情報",

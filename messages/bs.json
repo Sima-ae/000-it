@@ -1140,7 +1140,15 @@
     "searchEmpty": "Nema pronađenih rezultata. Isprobajte različite ključne riječi.",
     "searchLoading": "Pretraživanje…",
     "searchInCategory": "u {category}",
-    "searchElsewhere": "Na drugom mjestu u bazi znanja"
+    "searchElsewhere": "Na drugom mjestu u bazi znanja",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Informacije",

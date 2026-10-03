@@ -1140,7 +1140,15 @@
     "searchEmpty": "Результаты не найдены. Попробуйте разные ключевые слова.",
     "searchLoading": "Идет поиск…",
     "searchInCategory": "В {category}",
-    "searchElsewhere": "В другом месте базы знаний"
+    "searchElsewhere": "В другом месте базы знаний",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Информация",

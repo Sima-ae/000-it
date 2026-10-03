@@ -1140,7 +1140,15 @@
     "searchEmpty": "შედეგი ვერ მოიძებნა. სცადეთ სხვადასხვა საკვანძო სიტყვები.",
     "searchLoading": "ძიება…",
     "searchInCategory": "{category}-ში",
-    "searchElsewhere": "სხვაგან ცოდნის ბაზაში"
+    "searchElsewhere": "სხვაგან ცოდნის ბაზაში",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "ინფორმაცია",

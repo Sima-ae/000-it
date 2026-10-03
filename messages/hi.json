@@ -1165,7 +1165,15 @@
     "seoTitleSuffix": "ज्ञानधार",
     "tipLabel": "बख्शीश",
     "warnLabel": "टिप्पणी",
-    "subcategoriesLabel": "उपश्रेणियों"
+    "subcategoriesLabel": "उपश्रेणियों",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "जानकारी",

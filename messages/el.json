@@ -1140,7 +1140,15 @@
     "searchEmpty": "Δεν βρέθηκαν αποτελέσματα. Δοκιμάστε διαφορετικές λέξεις-κλειδιά.",
     "searchLoading": "Ερευνητικός…",
     "searchInCategory": "Σε {category}",
-    "searchElsewhere": "Αλλού στη βάση γνώσεων"
+    "searchElsewhere": "Αλλού στη βάση γνώσεων",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "Πληροφορίες",

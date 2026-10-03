@@ -21,6 +21,11 @@ export const EXTRA_HOSTING_KENNISBANK_CATEGORY_SLUGS = new Set([
   "infrastructuur-servers",
   "veilig-online",
   "privacy-juridisch-compliance",
+  // YH “Bestellen & administratief” equivalents
+  "crm-klantenpanel",
+  "shop-en-pakketten",
+  // Hosting choice / comparisons customers ask for on Extra Hosting
+  "vergelijkingen-keuzehulp",
 ]);
 
 /** FAQ category ids kept on ExtraHosting (nl + en packs). */

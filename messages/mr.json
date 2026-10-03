@@ -1165,7 +1165,15 @@
     "seoTitleSuffix": "ज्ञानाचा आधार",
     "tipLabel": "टीप",
     "warnLabel": "नोंद",
-    "subcategoriesLabel": "उपवर्ग"
+    "subcategoriesLabel": "उपवर्ग",
+    "browseLabel": "Categories",
+    "labelsTitle": "Labels",
+    "popularTitle": "Popular",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "mostViewed": "Most viewed",
+    "expandCategory": "Show subcategories",
+    "collapseCategory": "Hide subcategories"
   },
   "faqPage": {
     "eyebrow": "माहिती",
