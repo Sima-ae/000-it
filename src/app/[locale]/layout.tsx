@@ -45,16 +45,27 @@ export async function generateMetadata(): Promise<Metadata> {
   const brand = await getRequestBrandContext();
   if (brand.brand !== "extrahosting") return {};
   const favicon = brand.config.favicon;
+  const cfg = brand.config;
+  const locale = brand.fixedLocale || cfg.defaultLocale || "en";
+  const isNl = locale === "nl";
+  const description = isNl
+    ? cfg.defaultDescription.nl
+    : cfg.defaultDescription.en;
+  const origin = `https://${brand.host || cfg.primaryHost}`;
+  const ogImage = `${origin}${cfg.ogImage.startsWith("/") ? cfg.ogImage : `/${cfg.ogImage}`}`;
   return {
+    metadataBase: new URL(origin),
     title: {
       default: EXTRA_HOSTING_PUBLIC_NAME,
       template: `%s · ${EXTRA_HOSTING_PUBLIC_NAME}`,
     },
+    description,
     applicationName: EXTRA_HOSTING_PUBLIC_NAME,
     appleWebApp: { title: EXTRA_HOSTING_PUBLIC_NAME, capable: true },
-    authors: [{ name: EXTRA_HOSTING_PUBLIC_NAME }],
+    authors: [{ name: EXTRA_HOSTING_PUBLIC_NAME, url: origin }],
     creator: EXTRA_HOSTING_PUBLIC_NAME,
     publisher: EXTRA_HOSTING_PUBLIC_NAME,
+    keywords: isNl ? [...cfg.defaultKeywords.nl] : [...cfg.defaultKeywords.en],
     icons: {
       icon: [
         { url: favicon, sizes: "any", type: "image/png" },
@@ -65,6 +76,30 @@ export async function generateMetadata(): Promise<Metadata> {
       shortcut: [favicon],
       apple: [{ url: favicon, sizes: "180x180", type: "image/png" }],
       other: [{ rel: "mask-icon", url: favicon, color: "#0a4f9c" }],
+    },
+    openGraph: {
+      type: "website",
+      siteName: EXTRA_HOSTING_PUBLIC_NAME,
+      title: EXTRA_HOSTING_PUBLIC_NAME,
+      description,
+      url: origin,
+      locale: isNl ? "nl_NL" : "en_US",
+      alternateLocale: [isNl ? "en_US" : "nl_NL"],
+      images: [
+        {
+          url: ogImage,
+          width: 600,
+          height: 200,
+          alt: EXTRA_HOSTING_PUBLIC_NAME,
+          type: "image/png",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: EXTRA_HOSTING_PUBLIC_NAME,
+      description,
+      images: [ogImage],
     },
   };
 }

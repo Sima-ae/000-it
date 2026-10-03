@@ -21,9 +21,12 @@ import {
 } from "@/lib/localized-copy";
 import { getPublishedNewsPost } from "@/lib/news";
 import { prisma } from "@/lib/prisma";
+import { readRequestSiteBrand } from "@/lib/brand/install-public-name";
+import { replaceTripleZeroName } from "@/lib/brand/public-name";
 import {
-  SITE_SEO,
   absoluteUrl,
+  activeSiteSeo,
+  brandAwareOgImagePath,
   defaultOgImage,
   geoMetadataOther,
   htmlLangTag,
@@ -91,6 +94,11 @@ export function rawPathFromPreviewRequest(input: {
   return "/";
 }
 
+function brandizePreviewText(value: string): string {
+  if (readRequestSiteBrand() !== "extrahosting") return value;
+  return replaceTripleZeroName(value);
+}
+
 function previewOf(
   locale: string,
   title: string,
@@ -99,14 +107,15 @@ function previewOf(
   image?: string | null,
   city?: Parameters<typeof geoMetadataOther>[0],
 ): SocialPreview {
+  const seo = activeSiteSeo();
   const path = !internalPath || internalPath === "/" ? "" : internalPath;
   const geo = geoMetadataOther(city, locale);
   return {
     locale,
-    title: plain(title) || SITE_SEO.name,
-    description: plain(description),
+    title: plain(brandizePreviewText(title)) || seo.name,
+    description: plain(brandizePreviewText(description)),
     url: absoluteUrl(localePath(locale, path)),
-    image: defaultOgImage(image || SITE_SEO.defaultOgImage),
+    image: defaultOgImage(brandAwareOgImagePath(image || seo.defaultOgImage)),
     geoRegion: geo["geo.region"],
     geoPlacename: geo["geo.placename"],
     geoPosition: geo["geo.position"],
@@ -114,12 +123,38 @@ function previewOf(
   };
 }
 
+function extraHostingHomePreview(locale: string): SocialPreview | null {
+  if (readRequestSiteBrand() !== "extrahosting") return null;
+  const seo = activeSiteSeo();
+  const isNl = locale === "nl";
+  return previewOf(
+    locale,
+    isNl ? "Domeinen en webhosting" : "Domains and web hosting",
+    isNl ? seo.defaultDescription.nl : seo.defaultDescription.en,
+    "/",
+    seo.defaultOgImage,
+  );
+}
+
 function localizedFallback(locale: string, internalPath: string): SocialPreview {
+  const seo = activeSiteSeo();
+  if (seo.brandId === "extrahosting") {
+    return (
+      extraHostingHomePreview(locale) ||
+      previewOf(
+        locale,
+        seo.name,
+        locale === "nl" ? seo.defaultDescription.nl : seo.defaultDescription.en,
+        internalPath,
+        seo.defaultOgImage,
+      )
+    );
+  }
   const home = getStaticPageSeoCopy("/", locale);
   const description =
     home?.description ||
-    (locale === "nl" ? SITE_SEO.defaultDescription.nl : SITE_SEO.defaultDescription.en);
-  return previewOf(locale, SITE_SEO.name, description, internalPath);
+    (locale === "nl" ? seo.defaultDescription.nl : seo.defaultDescription.en);
+  return previewOf(locale, seo.name, description, internalPath);
 }
 
 export async function resolveSocialPreview(rawPath: string): Promise<SocialPreview> {
@@ -129,9 +164,15 @@ export async function resolveSocialPreview(rawPath: string): Promise<SocialPrevi
   setCatalogLocaleOverlay(locale, getCatalogOverlaySync(locale));
   const path = toInternalPath(locale, parsed.path);
   const isNl = locale === "nl";
+  const seo = activeSiteSeo();
   const fallbackDescription = isNl
-    ? SITE_SEO.defaultDescription.nl
-    : SITE_SEO.defaultDescription.en;
+    ? seo.defaultDescription.nl
+    : seo.defaultDescription.en;
+
+  if (path === "/" || path === "") {
+    const home = extraHostingHomePreview(locale);
+    if (home) return home;
+  }
 
   const groupMatch = path.match(/^\/diensten\/categorie\/([^/]+)\/?$/);
   if (groupMatch) {
@@ -162,7 +203,7 @@ export async function resolveSocialPreview(rawPath: string): Promise<SocialPrevi
     const title =
       content?.title ||
       (isNl ? meta?.titleNl : meta?.title) ||
-      SITE_SEO.name;
+      seo.name;
     const description =
       content?.subtitle ||
       (isNl ? meta?.summaryNl : meta?.summary) ||
@@ -178,7 +219,7 @@ export async function resolveSocialPreview(rawPath: string): Promise<SocialPrevi
     const copy = getStaticPageSeoCopy("/domeinen", locale);
     return previewOf(
       locale,
-      content?.title || copy?.title || (isNl ? meta?.titleNl : meta?.title) || SITE_SEO.name,
+      content?.title || copy?.title || (isNl ? meta?.titleNl : meta?.title) || seo.name,
       content?.subtitle || copy?.description || (isNl ? meta?.summaryNl : meta?.summary) || fallbackDescription,
       "/domeinen",
       content?.image || page?.image,
@@ -336,6 +377,7 @@ export async function resolveSocialPreview(rawPath: string): Promise<SocialPrevi
 }
 
 export function renderSocialPreviewHtml(preview: SocialPreview) {
+  const seo = activeSiteSeo();
   const title = escAttr(preview.title);
   const description = escAttr(preview.description);
   const url = escAttr(preview.url);
@@ -356,6 +398,7 @@ export function renderSocialPreviewHtml(preview: SocialPreview) {
       : "image/png";
   const dir = isRtlLocale(preview.locale) ? "rtl" : "ltr";
   const lang = escAttr(htmlLangTag(preview.locale));
+  const siteName = escAttr(seo.name);
 
   return `<!DOCTYPE html>
 <html lang="${lang}" dir="${dir}">
@@ -368,7 +411,7 @@ export function renderSocialPreviewHtml(preview: SocialPreview) {
 <meta name="geo.position" content="${escAttr(geo["geo.position"])}"/>
 <meta name="ICBM" content="${escAttr(geo.ICBM)}"/>
 <meta property="og:type" content="website"/>
-<meta property="og:site_name" content="${escAttr(SITE_SEO.name)}"/>
+<meta property="og:site_name" content="${siteName}"/>
 <meta property="og:title" content="${title}"/>
 <meta property="og:description" content="${description}"/>
 <meta property="og:url" content="${url}"/>

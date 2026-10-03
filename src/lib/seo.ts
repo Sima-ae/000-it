@@ -9,11 +9,18 @@ import { hydrateLocalizedCopy } from "@/lib/localized-copy";
 import {
   BRANDS,
   brandIdForHost,
+  brandPrimaryOrigin,
   getBrandConfig,
   type SiteBrandId,
 } from "@/lib/brand/config";
-import { readRequestSiteBrand } from "@/lib/brand/install-public-name";
-import { EXTRA_HOSTING_PUBLIC_NAME } from "@/lib/brand/public-name";
+import {
+  readRequestPublicOrigin,
+  readRequestSiteBrand,
+} from "@/lib/brand/install-public-name";
+import {
+  EXTRA_HOSTING_PUBLIC_NAME,
+  replaceTripleZeroName,
+} from "@/lib/brand/public-name";
 
 function resolveSeoBrandId(): SiteBrandId {
   try {
@@ -82,7 +89,26 @@ export function siteSeoForBrand(brandId: SiteBrandId) {
   return buildSiteSeo(brandId);
 }
 
+/** Per-request brand SEO (Extra Hosting vs TripleZero). Falls back to env SITE_SEO. */
+export function activeSiteSeo() {
+  const brand = readRequestSiteBrand();
+  if (brand === "extrahosting") return siteSeoForBrand("extrahosting");
+  if (brand === "triplezero") return siteSeoForBrand("triplezero");
+  return SITE_SEO;
+}
+
 export function siteOrigin() {
+  // Multi-tenant: Extra Hosting previews/canonicals must use the request host
+  // (.nl / .eu), never the TripleZero AUTH_URL baked into SITE_SEO.
+  const brand = readRequestSiteBrand();
+  if (brand === "extrahosting") {
+    const fromRequest = readRequestPublicOrigin()?.replace(/\/$/, "").replace(/:3066\b/g, "");
+    if (fromRequest && !/localhost|127\.0\.0\.1/i.test(fromRequest)) {
+      return fromRequest;
+    }
+    return brandPrimaryOrigin("extrahosting");
+  }
+
   // Never leak the internal Next listen port (e.g. :3066) into canonical/OG URLs.
   let url = SITE_SEO.url.replace(/\/$/, "").replace(/:3066\b/g, "");
   // Production safety: never emit localhost/loopback as the public site origin.
@@ -90,8 +116,8 @@ export function siteOrigin() {
     process.env.NODE_ENV === "production" &&
     /localhost|127\.0\.0\.1/i.test(url)
   ) {
-    const brand = resolveSeoBrandId();
-    url = `https://${BRANDS[brand].primaryHost}`;
+    const resolved = resolveSeoBrandId();
+    url = `https://${BRANDS[resolved].primaryHost}`;
   }
   return url;
 }
@@ -296,20 +322,44 @@ export function htmlLangTag(locale: string) {
 }
 
 function coreKeywordsForLocale(locale: string): string[] {
-  if (locale === "nl") return [...SITE_SEO.defaultKeywords.nl];
-  return [...SITE_SEO.defaultKeywords.en];
+  const seo = activeSiteSeo();
+  if (locale === "nl") return [...seo.defaultKeywords.nl];
+  return [...seo.defaultKeywords.en];
+}
+
+/** Swap TripleZero OG assets for Extra Hosting when sharing EH sites. */
+export function brandAwareOgImagePath(path?: string | null): string {
+  const seo = activeSiteSeo();
+  const src = (path || "").trim();
+  if (seo.brandId !== "extrahosting") {
+    return src || seo.defaultOgImage;
+  }
+  if (
+    !src ||
+    /triplezero|logo-triplezero|weblogo-triplezero/i.test(src)
+  ) {
+    return seo.defaultOgImage;
+  }
+  return src;
 }
 
 export function defaultOgImage(path?: string | null) {
-  return absoluteUrl(path || SITE_SEO.defaultOgImage);
+  return absoluteUrl(brandAwareOgImagePath(path));
 }
 
 export function ogImageDimensions(pathOrUrl?: string | null) {
-  const src = (pathOrUrl || SITE_SEO.defaultOgImage).toLowerCase();
+  const seo = activeSiteSeo();
+  const src = (pathOrUrl || seo.defaultOgImage).toLowerCase();
   if (src.includes("logo-triplezero-it.jpg")) {
     return {
-      width: SITE_SEO.defaultOgImageWidth,
-      height: SITE_SEO.defaultOgImageHeight,
+      width: siteSeoForBrand("triplezero").defaultOgImageWidth,
+      height: siteSeoForBrand("triplezero").defaultOgImageHeight,
+    };
+  }
+  if (src.includes("extrahosting")) {
+    return {
+      width: seo.brandId === "extrahosting" ? seo.defaultOgImageWidth : 600,
+      height: seo.brandId === "extrahosting" ? seo.defaultOgImageHeight : 200,
     };
   }
   return { width: 1200, height: 630 };
@@ -418,25 +468,36 @@ export function buildPageMetadata(input: BuildPageMetadataInput): Metadata {
 
 export async function buildStaticPageMetadata(locale: string, path: string, overrides?: Partial<BuildPageMetadataInput>): Promise<Metadata> {
   await hydrateLocalizedCopy(locale);
+  const seo = activeSiteSeo();
+  const isEh = seo.brandId === "extrahosting";
   const page = getStaticPageSeo(path);
   const copy = getStaticPageSeoCopy(path, locale);
   if (!page || !copy) {
-    const fallback = locale === "nl" ? SITE_SEO.defaultDescription.nl : SITE_SEO.defaultDescription.en;
+    const fallback =
+      locale === "nl" ? seo.defaultDescription.nl : seo.defaultDescription.en;
     return buildPageMetadata({
       locale,
       path,
-      title: SITE_SEO.name,
+      title: seo.name,
       description: fallback,
+      image: seo.defaultOgImage,
       ...overrides,
     });
   }
+  const title = isEh ? replaceTripleZeroName(copy.title) : copy.title;
+  const description = isEh
+    ? replaceTripleZeroName(copy.description)
+    : copy.description;
+  const keywords = isEh
+    ? (copy.keywords || []).map(replaceTripleZeroName)
+    : copy.keywords;
   return buildPageMetadata({
     locale,
     path: page.path,
-    title: copy.title,
-    description: copy.description,
-    keywords: copy.keywords,
-    image: page.image,
+    title,
+    description,
+    keywords,
+    image: brandAwareOgImagePath(page.image),
     type: page.ogType,
     ...overrides,
   });

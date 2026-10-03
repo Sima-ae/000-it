@@ -77,3 +77,10 @@ export function readRequestSiteBrand(): "extrahosting" | "triplezero" | null {
     return null;
   }
 }
+
+/** Public https origin for the current request host (no trailing slash). */
+export function readRequestPublicOrigin(): string | null {
+  const host = requestHostHeader().split(":")[0].toLowerCase().trim();
+  if (!host || host === "localhost" || host.startsWith("127.")) return null;
+  return `https://${host}`;
+}
