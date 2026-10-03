@@ -116,25 +116,41 @@ export default async function ShopPage({
     >
       <h1 className="sr-only">{t("title")}</h1>
 
+      {/* 000-it: services/products first, then Ready to Go. Extra Hosting keeps hosting-first layout. */}
+      {!hostingOnly && serviceProducts.length > 0 ? (
+        <section className="text-center">
+          <h2 className="font-display text-[1.8rem] font-semibold tracking-tight text-accent md:text-[1.9rem]">
+            {t("services")}
+          </h2>
+          <div className="mt-6 grid gap-4 text-start md:grid-cols-2 xl:grid-cols-3">
+            {serviceProducts.map((product) => (
+              <ShopProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {!hostingOnly ? (
-        <PricingPlans
-          variant="embedded"
-          plans={plans}
-          labels={{
-            title: t("plans"),
-            subtitle: pricing("subtitle"),
-            plansHeadline: pricing("plansHeadline"),
-            monthly: pricing("monthly"),
-            yearly: pricing("yearly"),
-            save: pricing("saveYearly"),
-            perMonth: pricing("month"),
-            perYear: pricing("year"),
-            cta: pricing("cta"),
-            ctaContact: pricing("ctaContact"),
-            custom: pricing("custom"),
-            mostChosen: pricing("mostChosen"),
-          }}
-        />
+        <div className={serviceProducts.length > 0 ? "mt-16" : undefined}>
+          <PricingPlans
+            variant="embedded"
+            plans={plans}
+            labels={{
+              title: t("plans"),
+              subtitle: pricing("subtitle"),
+              plansHeadline: pricing("plansHeadline"),
+              monthly: pricing("monthly"),
+              yearly: pricing("yearly"),
+              save: pricing("saveYearly"),
+              perMonth: pricing("month"),
+              perYear: pricing("year"),
+              cta: pricing("cta"),
+              ctaContact: pricing("ctaContact"),
+              custom: pricing("custom"),
+              mostChosen: pricing("mostChosen"),
+            }}
+          />
+        </div>
       ) : null}
 
       {!hostingOnly ? (
@@ -178,19 +194,6 @@ export default async function ShopPage({
         <div className="mt-16">
           <WordPressCarePlansSection showTitle />
         </div>
-      ) : null}
-
-      {serviceProducts.length > 0 ? (
-        <section className="mt-16 text-center">
-          <h2 className="font-display text-[1.8rem] font-semibold tracking-tight text-accent md:text-[1.9rem]">
-            {t("services")}
-          </h2>
-          <div className="mt-6 grid gap-4 text-start md:grid-cols-2 xl:grid-cols-3">
-            {serviceProducts.map((product) => (
-              <ShopProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </section>
       ) : null}
 
       {hostingOnly ? (
